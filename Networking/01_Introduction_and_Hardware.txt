@@ -33,3 +33,6 @@ Types of netwrok:
 
 communication between network is called internetworking 
     The internet, as we know it today, is essentially the ultimated wide-area network, spanning the entire globe
+
+=====================================================Metropolitian-area network
+(MAN) The communication infrastructure that have been developed in and around large cities
