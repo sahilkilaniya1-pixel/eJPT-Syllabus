@@ -27,3 +27,4 @@ Types of netwrok:
 :Star topology=A configuration that centers around one node to which all others are connected and through which all messages are sent
 
 :Bus topology=All nodes are connected to a single communication line that carries messages in both directions
+=====================================================
