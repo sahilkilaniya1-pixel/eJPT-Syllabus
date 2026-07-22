@@ -1,6 +1,9 @@
 ====Networking========
 Computer netwrok A collection of computing devices that are connected in various ways in order to communicate and share resources
-Usually, the connections between computer in a netwrok are made using physical wires or cables
+Usually, the connections between computer in a network are made using physical wires or cables
     however,some connections are wireless,using radio waves of infrared signals
 
 Networking::::
+The generic term node or host refers to any device on a network 
+Data transfer rate The speed with ehich data is movied from one place on a Network to another
+Data transfer rate is a key issue in computer network.
