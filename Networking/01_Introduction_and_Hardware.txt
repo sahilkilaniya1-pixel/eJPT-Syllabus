@@ -28,3 +28,8 @@ Types of netwrok:
 
 :Bus topology=All nodes are connected to a single communication line that carries messages in both directions
 =====================================================
+::Wide-area network(WAN) - A network that connects two or more local-area network over a potentially large geographic distance 
+    often one particular node on a LAN is set up to serve as a gateway to handle all communication going between that LAN and other network
+
+communication between network is called internetworking 
+    The internet, as we know it today, is essentially the ultimated wide-area network, spanning the entire globe
