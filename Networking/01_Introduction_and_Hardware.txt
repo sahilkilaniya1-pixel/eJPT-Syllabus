@@ -12,3 +12,6 @@ Data transfer rate is a key issue in computer network.
 computer network have opened up an entire frontier in the world of computing called the client/server model.
 
 client -> request (server)-> response-> client
+
+::File server->A computer that stores and manages files for multiple users on a network.
+::Web server->A computer dedicated to responding to request (from the browser client) for web pages.
