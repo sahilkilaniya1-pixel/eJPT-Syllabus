@@ -15,3 +15,15 @@ client -> request (server)-> response-> client
 
 ::File server->A computer that stores and manages files for multiple users on a network.
 ::Web server->A computer dedicated to responding to request (from the browser client) for web pages.
+
+
+=====================================================
+Types of netwrok:
+::Local-area network(LAN) - A network thar connect a relatively small number of machines in a relatively close geographical area
+
+=Various configurations, called topologies, have been used to administer LANs
+:Ring topology= A configuration that connects all nodes in a closed loop on which messages travel in one direction
+
+:Star topology=A configuration that centers around one node to which all others are connected and through which all messages are sent
+
+:Bus topology=All nodes are connected to a single communication line that carries messages in both directions
