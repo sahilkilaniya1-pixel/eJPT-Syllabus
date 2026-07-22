@@ -7,3 +7,8 @@ Networking::::
 The generic term node or host refers to any device on a network 
 Data transfer rate The speed with ehich data is movied from one place on a Network to another
 Data transfer rate is a key issue in computer network.
+
+=====================================================
+computer network have opened up an entire frontier in the world of computing called the client/server model.
+
+client -> request (server)-> response-> client
