@@ -3,3 +3,13 @@ well. nobody does. No single personor company owns the Internet or even controls
 
 
 ::Local-area network connected across a distance to create a wide-area network
+
+Internet connnections:::
+-------------------------------------------
+There are various technologies available that you can use to connect a home computer to the Internet
+
+::A phone modem Converts computer data into an analog audio signal for transfer over a telephone line, and then a modem at the destination converts it back again into data
+
+::A digital subscriber Line(DSL) uses regular copper phone line to transfer digital data to and from the phone company's central office
+
+::A cable modem uses the same line that your cable TV singnals come in on ot trasfer the data back and forth
