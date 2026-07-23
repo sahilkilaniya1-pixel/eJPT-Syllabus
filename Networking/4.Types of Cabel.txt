@@ -1,0 +1,4 @@
+Transmission Media::
+Guided -> Twisted-pair cable , coaxial Cabel, Fiber-Optic Cabel
+
+Unguided -> Radio Waves, Microwaves, Infrared
