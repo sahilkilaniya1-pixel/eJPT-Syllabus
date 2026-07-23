@@ -97,3 +97,78 @@ mein todta hai.
 ====================================================================================================
 === END OF OSI MODEL MASTER NOTES ===
 ====================================================================================================
+====================================================================================================
+🌐 OSI MODEL PEER-TO-PEER PROCESS & INTERFACE ARCHITECTURE
+====================================================================================================
+Description: Device A se Device B ke beech OSI Model ke zariye Data Flow, Peer-to-Peer Protocols, 
+Layer Interfaces, aur Intermediate Nodes (Routers) ka functioning model.
+
+----------------------------------------------------------------------------------------------------
+🎨 OSI COMMUNICATION ARCHITECTURE DIAGRAM (Visualizing Image)
+----------------------------------------------------------------------------------------------------
+
+        [ Device A ]                                                                [ Device B ]
+            │                                                                           │
+┌─────────────────────────┐                                                 ┌─────────────────────────┐
+│ 7. Application Layer    │◄════════════ Peer-to-Peer Protocol (7th Layer) ════════►│ 7. Application Layer    │
+└───────────┬─────────────┘                                                 └───────────┬─────────────┘
+│      7-6 Interface      │                                                 │      7-6 Interface      │
+┌───────────┴─────────────┐                                                 ┌───────────┴─────────────┐
+│ 6. Presentation Layer   │◄════════════ Peer-to-Peer Protocol (6th Layer) ════════►│ 6. Presentation Layer   │
+└───────────┬─────────────┘                                                 └───────────┬─────────────┘
+│      6-5 Interface      │                                                 │      6-5 Interface      │
+┌───────────┴─────────────┐                                                 ┌───────────┴─────────────┐
+│ 5. Session Layer        │◄════════════ Peer-to-Peer Protocol (5th Layer) ════════►│ 5. Session Layer        │
+└───────────┬─────────────┘                                                 └───────────┬─────────────┘
+│      5-4 Interface      │                                                 │      5-4 Interface      │
+┌───────────┴─────────────┐                                                 ┌───────────┴─────────────┐
+│ 4. Transport Layer      │◄════════════ Peer-to-Peer Protocol (4th Layer) ════════►│ 4. Transport Layer      │
+└───────────┬─────────────┘                                                 └───────────┬─────────────┘
+│      4-3 Interface      │                                                 │      4-3 Interface      │
+┌───────────┴─────────────┐    [ Intermediate Node ]   [ Intermediate Node ]┌───────────┴─────────────┐
+│ 3. Network Layer        │◄───3rd──►┌─────────────┐───3rd──►┌─────────────┐───3rd──►│ 3. Network Layer        │
+└───────────┬─────────────┘          │ Network     │         │ Network     │    └───────────┬─────────────┘
+│      3-2 Interface      │          └──────┬──────┘         └──────┬──────┘    │      3-2 Interface      │
+┌───────────┴─────────────┐          │ 3-2 Intf    │         │ 3-2 Intf    │    ┌───────────┴─────────────┐
+│ 2. Data Link Layer      │◄───2nd──►┌──────┴──────┐───2nd──►┌──────┴──────┐───2nd──►│ 2. Data Link Layer      │
+└───────────┬─────────────┘          │ Data Link   │         │ Data Link   │    └───────────┬─────────────┘
+│      2-1 Interface      │          └──────┬──────┘         └──────┬──────┘    │      2-1 Interface      │
+┌───────────┴─────────────┐          │ 2-1 Intf    │         │ 2-1 Intf    │    ┌───────────┴─────────────┐
+│ 1. Physical Layer       │◄───1st──►┌──────┴──────┐───1st──►┌──────┴──────┐───1st──►│ 1. Physical Layer       │
+└───────────┬─────────────┘          │ Physical    │         │ Physical    │    └───────────┬─────────────┘
+            └────────────────────────┴─────────────┴─────────┴─────────────┴────────────────┘
+                                    ◄─── Physical Communication Path ───►
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED EXPLANATION OF CONCEPTS (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. PEER-TO-PEER PROTOCOLS (Horizontally Virtual Connections):
+   - Sender (Device A) aur Receiver (Device B) ki SAME LEVEL layers aapas mein logically 
+     communicate karti hain, jise Peer-to-Peer Protocol kehte hain.
+   - Example: Device A ka Application Layer direct Device B ke Application Layer se logically 
+     'Peer-to-Peer Protocol' ke zariye baatchat karta hai.
+   - Layers 4 to 7 (Application, Presentation, Session, Transport) END-TO-END processes hain, 
+     woh beech ke kisi intermediate node par nahi rukte.
+
+2. LAYER INTERFACES (Vertically Physical Connections):
+   - Har layer apne theek upar aur niche wali layer se interact karti hai.
+   - Inn layers ke beech ke boundary/boundary rules ko **Layer Interface** kehte hain 
+     (Jaise 7-6 Interface, 6-5 Interface, 5-4 Interface, etc.).
+   - Yeh interfaces data ko format karke next layer ko handoff karte hain.
+
+3. INTERMEDIATE NODES (Routers / Switches):
+   - Network mein Sender aur Receiver ke beech mein intermediate nodes (jaise Routers) hote hain.
+   - Intermediate nodes par **sirf bottom 3 layers** (Physical, Data Link, aur Network Layer) 
+     hi active hoti hain.
+   - Top 4 layers (Transport se Application) sirf source (Device A) aur destination (Device B) 
+     par hi process hoti hain.
+
+4. ACTUAL DATA FLOW vs LOGICAL FLOW:
+   - Logical Flow: Horizonally (Peer-to-Peer) ek layer doosre machine ki same layer se connect hoti hai.
+   - Physical Flow: Data Device A ke Layer 7 se niche Layer 1 tak jata hai -> Physical wire/air ke 
+     zariye Intermediate Nodes se hota hua -> Device B ke Layer 1 par enter karke wapas Layer 7 tak jata hai.
+
+====================================================================================================
+=== END OF OSI PEER-TO-PEER ARCHITECTURE NOTES ===
+====================================================================================================
