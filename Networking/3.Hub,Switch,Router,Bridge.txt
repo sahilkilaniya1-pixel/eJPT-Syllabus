@@ -7,3 +7,5 @@ Network Devices:::
 ::3.Modem-Modem(from modulator-demodulator) is a device that turns the digital 1s and 0s of a personal computer into sounds that can be transmitted over the telephone lines and once received on the other side, converts those sounds back into a from used by a USB, Ethernet, serial, or network connection. Modems are generally classified by the amount of data they can send in a given time, normally measured in bits per second, or "bps".
 
 ::4.Switches-Switches provides a central connection between two or more computers on a network, but with some intelligence. they provides traffic control for packets; rather than forwarding data to all the connected ports, a switch forwards data only to the part on which  the destination system is connected. They use a database of MAC addresses to determine where computers are located and very efficiently send packets only where they need to go.
+
+::5.Bridge-
