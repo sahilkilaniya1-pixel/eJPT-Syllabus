@@ -82,3 +82,5 @@ Disadvantages :-Low data Rate , Short range
 
 
 ::Coaxial Cable- coaxial cable is a type of copper cable specially built with a metal shield and other components engineered to block signal interference. it is primarily used by cable TV companies to connect their satellite antenna facilities to customer homes and businesses.
+
+plastic cover- insulator- outer conductor shield- insulator- inner conductor
