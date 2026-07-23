@@ -1,15 +1,15 @@
 ====================================================================================================
 📚 THE TCP/IP PROTOCOL STACK - LAYER-WISE PROTOCOLS REFERENCE GUIDE
 ====================================================================================================
-Description: OSI Model, TCP/IP Model, aur har specific layer par kaam karne wale real-world 
-TCP/IP Protocols (Protocol Suite) ka complete breakdown.
+Description: OSI Model, TCP/IP Model, aur har layer par kaam karne wale real-world 
+TCP/IP Protocols ka complete breakdown.
 
 ----------------------------------------------------------------------------------------------------
-🎨 PROTOCOL STACK MAPPING DIAGRAM
+🎨 PROTOCOL STACK MAPPING DIAGRAM (Layer Ke Hisab Se Protocols)
 ----------------------------------------------------------------------------------------------------
 
 +------------------+-------------------+-----------------------------------------------------------+
-| OSI Model        | TCP/IP Model      | TCP/IP Protocol Suite (Protocols Used at Each Layer)      |
+| OSI Model        | TCP/IP Model      | TCP/IP Protocol Suite (Har Layer Ke Protocols)            |
 +------------------+-------------------+-----------------------------------------------------------+
 | Application      |                   |                                                           |
 | Presentation     | Application Layer |  [ Telnet ] [ FTP ] [ SMTP ] [ DNS ] [ RIP ] [ SNMP ]     |
@@ -25,110 +25,94 @@ TCP/IP Protocols (Protocol Suite) ka complete breakdown.
 +------------------+-------------------+-----------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------------
-🛠️ DETAILED BREAKDOWN OF PROTOCOLS BY LAYER (Hinglish Notes)
+🛠️ DETAILED BREAKDOWN OF PROTOCOLS BY LAYER (Hinglish Explanations)
 ----------------------------------------------------------------------------------------------------
 
 1. APPLICATION LAYER PROTOCOLS (User Facing & High-Level Services):
-   - Telnet (Teletype Network): Remote terminal login ke liye text-based access setup karta hai.
-   - FTP (File Transfer Protocol): Network par files ko send aur receive karne ke liye.
-   - SMTP (Simple Mail Transfer Protocol): Electronic Emails (emails) bhejne ke liye standard.
-   - DNS (Domain Name System): Domain names (e.g., google.com) ko IP Addresses mein convert karta hai.
-   - RIP (Routing Information Protocol): Routers ke beech best routing path decide karne ka protocol.
+   - Telnet (Teletype Network): Remote server ya device par text-based terminal access ke liye.
+   - FTP (File Transfer Protocol): Network par files ko upload aur download karne ke liye.
+   - SMTP (Simple Mail Transfer Protocol): Emails bhejne ka standard protocol.
+   - DNS (Domain Name System): Domain names (jaise google.com) ko IP Addresses mein convert karta hai.
+   - RIP (Routing Information Protocol): Routers ke beech best routing path choose karne ke liye.
    - SNMP (Simple Network Management Protocol): Network devices ko monitor aur manage karne ke liye.
 
 2. TRANSPORT LAYER PROTOCOLS (Process-to-Process Delivery):
-   - TCP (Transmission Control Protocol): 
-     * Connection-Oriented protocol (Reliable, handshaking, error checking, retransmission).
-   - UDP (User Datagram Protocol): 
-     * Connection-Less protocol (Super fast, low latency, no delivery guarantee - useful for streaming).
+   - TCP (Transmission Control Protocol): Connection-Oriented protocol (Reliable delivery, 3-way handshake, error check, aur retransmission support).
+   - UDP (User Datagram Protocol): Connection-Less protocol (Super fast, bina delivery guarantee ke - live streaming/gaming ke liye best).
 
 3. NETWORK / INTERNET LAYER PROTOCOLS (Logical Addressing & Routing):
    - IP (Internet Protocol): Main protocol jo packets par Source & Destination IP address lagata hai (IPv4/IPv6).
-   - ARP (Address Resolution Protocol): IP Address se Hardware MAC Address find karta hai.
-   - ICMP (Internet Control Message Protocol): Error reporting aur diagnostic messages handle karta hai (e.g., Ping command).
+   - ARP (Address Resolution Protocol): IP Address ka use karke MAC Address find karta hai.
+   - ICMP (Internet Control Message Protocol): Error reporting aur diagnostic messages handle karta hai (jaise Ping command).
    - IGMP (Internet Group Management Protocol): IP Multicasting (group transmission) ko manage karta hai.
 
 4. DATA LINK & PHYSICAL LAYER STANDARDS (Hardware & Media Access):
-   - Ethernet: Wired LAN connection ka sabse widely used standard (IEEE 802.3).
-   - Token Ring: Legacy local area network technology jisme token passing mechanism use hota tha.
-   - Frame Relay: High-speed WAN connection standard jo digital packet switching use karta hai.
-   - ATM (Asynchronous Transfer Mode): Cell-based network technology jo voice, video, aur data fast transmission karti hai.
+   - Ethernet: Wired local network (LAN) ka sabse widely used standard.
+   - Token Ring: Old local network technology jisme token passing mechanism use hota tha.
+   - Frame Relay: Digital packet switching pe chalne wala WAN network standard.
+   - ATM (Asynchronous Transfer Mode): Cell-based network technology jo voice, video, aur data fast transmit karti hai.
 
 ====================================================================================================
 === END OF PROTOCOL STACK MASTER NOTES ===
 ====================================================================================================
 
+
 ====================================================================================================
 🌐 THE INTERNET PROTOCOL (IP) - CORE CONCEPTS & WORKING
 ====================================================================================================
-Description: Network Layer ka sabse foundational protocol - Internet Protocol (IP), Packet Routing, 
-aur Host Identification / Logical Addressing ka complete breakdown.
+Description: Network Layer ka sabse main protocol - Internet Protocol (IP), Packet Routing, 
+aur Host Identification ka simple breakdown.
 
 ----------------------------------------------------------------------------------------------------
-📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+📄 SLIDE TEXT & HINGLISH EXPLANATION
 ----------------------------------------------------------------------------------------------------
 
 1. PACKET-BASED DATA TRANSFER:
-   - "Data is transferred in the form of packets via logical network paths in an ordered 
-     format controlled by the network layer."
-   - 💡 Explanation: Network Layer par bada data chhote-chhote **Packets** (Datagrams) mein 
-     divide hota hai. Har packet ke sath Source IP aur Destination IP attached hota hai taaki 
-     woh network par route ho sake.
+   - Original Text: "Data is transferred in the form of packets via logical network paths in an ordered format controlled by the network layer."
+   - 💡 Hinglish Meaning: Network layer par bade data ko chhote **Packets** (Datagrams) mein toda jata hai. Har packet ke sath Source IP aur Destination IP attached hota hai taaki woh sahi address tak pahunch sake.
 
 2. ROUTING & PATH DETERMINATION:
-   - "It does this by forwarding packets to network routers, which rely on algorithms to 
-     determine the best paths for the data to travel. These paths are known as virtual circuits."
-   - 💡 Explanation: Packets routers ke zariye aage pass hote hain. Routers Routing Algorithms 
-     (jaise OSPF, BGP) ka use karke sabse best/shortest path chunne ka kaam karte hain.
-   - 📌 Note for Exams/Interviews: Pure IP networks *Datagram-switching* follow karte hain 
-     (jahan har packet independent path le sakta hai). Virtual Circuit concept connection-oriented 
-     networks (jaise ATM / Frame Relay ya MPLS) mein use hota hai.
+   - Original Text: "It does this by forwarding packets to network routers, which rely on algorithms to determine the best paths for the data to travel. These paths are known as virtual circuits."
+   - 💡 Hinglish Meaning: Packets routers ke through aage pass hote hain. Routers Routing Algorithms ka use karke best path decide karte hain.
+   - 📌 Exam/Interview Special Note: Standard IP network *Datagram switching* follow karta hai (har packet independent path le sakta hai). Virtual Circuit concept connection-oriented networks (jaise ATM / Frame Relay ya MPLS) mein use hota hai.
 
 3. LOGICAL IDENTIFICATION (IP ADDRESSING):
-   - "The Internet Protocol (IP) is the method or protocol by which data is sent from one 
-     computer to another on the Internet. Each computer (known as a host) on the Internet 
-     has at least one IP address that uniquely identifies it from all other computers on the Internet."
-   - 💡 Explanation: IP Protocol internet par ek computer se doosre computer tak data bhejne ka 
-     rule set hai. Internet se jude har system (Host) ko ek unique ID milti hai jise **IP Address** 
-     kehte hain (e.g., IPv4: 192.168.1.1 ya IPv6).
+   - Original Text: "The Internet Protocol (IP) is the method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet."
+   - 💡 Hinglish Meaning: IP Protocol internet par ek computer se doosre computer tak data bhejne ke rules hai. Internet se jude har system (Host) ko ek unique ID milti hai jise **IP Address** kehte hain (jaise IPv4: 192.168.1.1 ya IPv6).
 
 ----------------------------------------------------------------------------------------------------
-📊 KEY CHARACTERISTICS OF INTERNET PROTOCOL (IP) FOR REVISION
+📊 KEY CHARACTERISTICS OF IP PROTOCOL (Quick Revision)
 ----------------------------------------------------------------------------------------------------
 
 +-----------------------+-------------------------------------------------------------------+
 | Feature               | Description                                                       |
 +-----------------------+-------------------------------------------------------------------+
-| Layer                 | Network Layer (Layer 3 in OSI / Modern TCP/IP)                    |
+| Layer                 | Network Layer (OSI Layer 3 / TCP/IP Layer 3)                      |
 | Service Type          | Connectionless & Best-Effort Delivery                             |
 | Packet Format         | IP Datagram (Header + Payload)                                    |
 | Addressing            | Logical Addressing (IPv4 = 32-bit, IPv6 = 128-bit)               |
-| Reliability           | Unreliable (Does not guarantee delivery; TCP handles reliability) |
+| Reliability           | Unreliable (Delivery ki 100% guarantee nahi deta, TCP karta hai)  |
 +-----------------------+-------------------------------------------------------------------+
 
 ====================================================================================================
 === END OF INTERNET PROTOCOL (IP) NOTES ===
 ====================================================================================================
+
+
 ====================================================================================================
 🌐 THE INTERNET PROTOCOL (IP) - PACKETIZATION & DATAGRAM STRUCTURE
 ====================================================================================================
-Description: Message fragmentation, independent packet routing, IP Datagram format (Header + Data), 
-aur IP Versions (IPv4 vs IPv6) ka detailed breakdown.
+Description: Data packetization, independent packet routing, IP Datagram format (Header + Data), 
+aur IP Versions (IPv4 vs IPv6) ka breakdown.
 
 ----------------------------------------------------------------------------------------------------
-📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+📄 SLIDE TEXT & HINGLISH EXPLANATION
 ----------------------------------------------------------------------------------------------------
 
 1. INDEPENDENT PACKET ROUTING & OUT-OF-ORDER DELIVERY:
-   - "A message is divided into a number of packets, each packet can, if necessary, be sent 
-     by a different route across the Internet. Packets can arrive in a different order than 
-     the order they were sent in."
-   - 💡 Explanation: IP Protocol mein pure message ko chhote **Packets** (Datagrams) mein toda 
-     jata hai. Network congestion ke hisab se har packet alag-alag path (route) se travel kar 
-     sakta hai.
-   - 📌 Important Consequence: Kyunki packets alag routes se aate hain, woh receiver par **Out-of-Order** 
-     (aage-piche) pahunch sakte hain. Unhe wapas correct sequence mein arrange karne ka kaam 
-     Transport Layer (TCP) karta hai.
+   - Original Text: "A message is divided into a number of packets, each packet can, if necessary, be sent by a different route across the Internet. Packets can arrive in a different order than the order they were sent in."
+   - 💡 Hinglish Meaning: IP Protocol mein pooray message ko multiple Packets mein baanta jata hai. Network traffic ke hisab se har packet alag-alag route se travel kar sakta hai.
+   - 📌 Direct Impact: Kyunki packets alag routes se aate hain, woh receiver par **Out-of-Order** (aage-piche) pahunch sakte hain. Unhe wapas sahi sequence mein arrange karna Transport Layer (TCP) ka kaam hai.
 
 2. BASIC TRANSFER UNIT OF DATA (IP DATAGRAM STRUCTURE):
    
@@ -136,18 +120,15 @@ aur IP Versions (IPv4 vs IPv6) ka detailed breakdown.
    │     Datagram Header     │        Datagram Data Area        │
    └─────────────────────────┴──────────────────────────────────┘
    
-   - Datagram Header: Contains control information like Source IP Address, Destination IP Address, 
-     TTL (Time to Live), Protocol Type, Version, and Header Checksum.
-   - Datagram Data Area: Contains the actual payload/message passed down from upper layers (e.g., TCP/UDP segment).
+   - Datagram Header: Isme control info hoti hai jaise Source IP Address, Destination IP Address, TTL (Time to Live), Version, Protocol, aur Checksum.
+   - Datagram Data Area: Isme actual message/data hota hai jo upper layers (TCP/UDP) se mila hota hai.
 
 3. IP VERSIONS (IPv4 vs IPv6):
-   - "The most widely used version of IP today is Internet Protocol Version 4 (IPv4). 
-     However, IP Version 6 (IPv6) is also beginning to be supported."
-   - 💡 Explanation: IPv4 sabse common version hai, par limited address capacity ki wajah se 
-     aaj kal IPv6 ka adoption rapidly grow kar raha hai.
+   - Original Text: "The most widely used version of IP today is Internet Protocol Version 4 (IPv4). However, IP Version 6 (IPv6) is also beginning to be supported."
+   - 💡 Hinglish Meaning: Today sabse widely used IPv4 hai, par limited capacity ki wajah se ab IPv6 ka rapid rollout ho raha hai.
 
 ----------------------------------------------------------------------------------------------------
-📊 QUICK COMPARISON: IPv4 vs IPv6 (FOR EXAMS & INTERVIEWS)
+📊 QUICK COMPARISON: IPv4 vs IPv6 (Exams/Interviews ke liye)
 ----------------------------------------------------------------------------------------------------
 
 +-----------------------+----------------------------------+----------------------------------+
@@ -155,70 +136,55 @@ aur IP Versions (IPv4 vs IPv6) ka detailed breakdown.
 +-----------------------+----------------------------------+----------------------------------+
 | Address Size          | 32-bit (4 Bytes)                 | 128-bit (16 Bytes)               |
 | Address Format        | Dotted Decimal (e.g. 192.168.1.1)| Hexadecimal (e.g. 2001:db8::1)   |
-| Address Space         | ~4.3 Billion Addresses           | ~3.4 × 10^38 Addresses           |
-| Header Size           | Variable (20 to 60 Bytes)        | Fixed (40 Bytes)                 |
-| Security              | Optional (IPsec added later)     | Built-in / Mandatory (IPsec)     |
+| Address Capacity      | Approx 4.3 Billion Addresses     | Approx 3.4 × 10^38 Addresses     |
+| Header Size           | Variable Size (20 se 60 Bytes)   | Fixed Size (40 Bytes)            |
+| Security              | Optional (IPsec baad mein aaya)  | Built-in / Mandatory (IPsec)     |
 +-----------------------+----------------------------------+----------------------------------+
 
 ====================================================================================================
 === END OF IP PACKETIZATION NOTES ===
 ====================================================================================================
+
+
 ====================================================================================================
 📦 THE IP DATAGRAM - DEFINITION & CORE CONCEPTS
 ====================================================================================================
-Description: IP Datagram ki formal definition, Datagram vs Packet terminology, Header 
-information, aur Variable data size ka detailed breakdown.
+Description: IP Datagram ki official definition, Datagram vs Packet terminology, Header, 
+aur Data Portion.
 
 ----------------------------------------------------------------------------------------------------
-📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+📄 SLIDE TEXT & HINGLISH EXPLANATION
 ----------------------------------------------------------------------------------------------------
 
 1. DEFINITION OF A DATAGRAM:
-   - "A datagram is 'a self-contained, independent entity of data carrying sufficient 
-     information to be routed from the source to the destination computer without reliance 
-     on earlier exchanges between this source and destination computer and the transporting network.'"
-   - 💡 Explanation: Datagram ek **self-dependent data unit** hota hai. Iske paas apni poori 
-     routing info (Source IP, Destination IP, etc.) hoti hai. Isko route hone ke liye pichle 
-     kisi message ya connection state par depend hone ki zaroorat nahi hoti (hence, connectionless).
+   - Original Text: "A datagram is 'a self-contained, independent entity of data carrying sufficient information to be routed from the source to the destination computer without reliance on earlier exchanges between this source and destination computer and the transporting network.'"
+   - 💡 Hinglish Meaning: Datagram ek **self-dependent data unit** hota hai. Iske pass apni poori routing details hoti hain. Route hone ke liye ise pichle kisi message ya old state pe depend nahi rehna padta.
 
 2. TERMINOLOGY SYNONYM (Datagram vs Packet):
-   - "The term 'datagram' has become synonymous with the term 'packet.'"
-   - 💡 Explanation: Network Layer par "Datagram" aur "Packet" ko ek hi baat mana jata hai. 
-     Dono terms interchangeable tarike se use hoti hain.
+   - Original Text: "The term 'datagram' has become synonymous with the term 'packet.'"
+   - 💡 Hinglish Meaning: Network Layer par "Datagram" aur "Packet" dono ka matlab same hi hai. Unhe interchangeable terms ki tarah use karte hain.
 
 3. HEADER INFORMATION:
-   - "The information regarding the packet's destination and interpretation is in its header."
-   - 💡 Explanation: Packet kahan ja raha hai (Destination Address) aur use kaise interpret/process 
-     karna hai (Protocol type, Version, TTL, Checksum), yeh saari zaroori routing details 
-     **Header** section mein hoti hain.
+   - Original Text: "The information regarding the packet's destination and interpretation is in its header."
+   - 💡 Hinglish Meaning: Packet kahan bhejna hai (Destination) aur use kaise padhna/process karna hai, yeh saari metadata info **Header** section mein hoti hai.
 
 4. VARIABLE DATA PORTION:
-   - "The data portion which follows is variable in size."
-   - 💡 Explanation: Datagram ka Header fixed/defined format ka hota hai, jabki iske peeche 
-     ka **Data (Payload)** size fixed nahi hota—yeh variable size ka hota hai (MTU limits ke under).
-
-----------------------------------------------------------------------------------------------------
-📊 QUICK STRUCTURE REVISION
-----------------------------------------------------------------------------------------------------
-
-+-----------------------------------+---------------------------------------------------+
-| IP Datagram Part                  | Main Purpose / Content                            |
-+-----------------------------------+---------------------------------------------------+
-| Header (Fixed / Metadata)         | Source & Destination IP, TTL, Version, Checksum   |
-| Data / Payload (Variable Size)    | Actual Application/Transport Layer Message        |
-+-----------------------------------+---------------------------------------------------+
+   - Original Text: "The data portion which follows is variable in size."
+   - 💡 Hinglish Meaning: Header ke baad wala **Data (Payload)** size fixed nahi hota, woh situation aur message ke according badal sakta hai (variable size).
 
 ====================================================================================================
-=== END OF IP DATAGRAM NOTES ===
+=== END OF IP DATAGRAM DEFINITION NOTES ===
 ====================================================================================================
+
+
 ====================================================================================================
 📦 THE IP DATAGRAM - PACKET INDEPENDENCE & "BEST-EFFORT" DELIVERY
 ====================================================================================================
-Description: IP Packet ki key requirements, Best-Effort delivery delivery model, aur IP Protocol 
-ki core limitations (Packet Loss, Duplication, Reordering, Corruption) ka complete breakdown.
+Description: IP Packet ki key requirements, Best-Effort delivery model, aur IP Protocol ki 
+limitations.
 
 ----------------------------------------------------------------------------------------------------
-📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+📄 SLIDE TEXT & HINGLISH EXPLANATION
 ----------------------------------------------------------------------------------------------------
 
 1. PACKET INDEPENDENCE REQUIREMENTS:
@@ -227,39 +193,34 @@ ki core limitations (Packet Loss, Duplication, Reordering, Corruption) ka comple
      * "Independent of the specifics of the path it has traveled thus far"
      * "Understandable to any router along the way or the destination host's IP layer"
    
-   - 💡 Explanation:
-     * Media Interoperability: Packet is tarah design hota hai ki woh kisi bhi physical network 
-       (Ethernet, Wi-Fi, Fiber) par bina change hue travel kar sake.
-     * Path Agnostic: Isse farq nahi padta ki pichle kaun se router ya link se yeh aaya hai; 
-       har step par iske header information se ise independently route kiya ja sakta hai.
-     * Universal Standard: Internet ka har router aur host destination IP layer par same IP header 
-       format samajhta hai.
+   - 💡 Hinglish Meaning:
+     * Media Independent: Packet standard format ka hota hai taaki Wi-Fi, Ethernet, ya Fiber-optic kisi par bhi bina badle travel kar sake.
+     * Path Independent: Isse farq nahi padta ki pichle raste par kya hua, iska header readable hota hai har point par.
+     * Universal Rules: Internet ka har router aur target host is IP header ko perfectly samajhta hai.
 
-2. "BEST-EFFORT" DELIVERY SERVICE MODEL & LIMITATIONS:
+2. "BEST-EFFORT" DELIVERY MODEL & LIMITATIONS:
    - "The IP protocol makes a 'best-effort' to deliver the packets. It does NOT handle:"
      * datagram duplication (because of retransmission)
      * delayed or out-of-order delivery
      * corruption of data
      * datagram loss
 
-   - 💡 Explanation:
-     * What is "Best-Effort"?: IP Protocol best try karta hai packet destination tak pahunchane ka, 
-       par delivery ki **100% Guarantee nahi deta**.
-     * What IP DOES NOT Handle (Limitations):
-       1. Duplication: Agar ek hi packet do baar aa jaye, toh IP use handle nahi karta.
-       2. Out-of-Order: Packets late aayen ya aage-piche aayen, IP unhe re-order nahi karta.
-       3. Data Corruption: Payload corrupted ho toh IP repair nahi karta (drop kar deta hai).
-       4. Packet Loss: Path mein packet drop ya lost ho jaye, toh IP wapas bhejta nahi hai.
+   - 💡 Hinglish Meaning:
+     * Best-Effort Kya Hai?: IP Protocol packet deliver karne ki poori koshish karta hai, par delivery ki **100% Guarantee nahi deta**.
+     * IP Kya Handle NAHI Karta (Limitations):
+       1. Duplication: Agar ek hi packet do baar aa jaye, toh IP use clear nahi karta.
+       2. Out-of-Order: Packets late ya aage-piche aayen, IP unhe straight sequence mein nahi lagata.
+       3. Corruption: Data raste mein kharab hone par IP repair nahi karta.
+       4. Packet Loss: Packet drop ya lost hone par IP wapas resend nahi karta.
 
-   - 📌 Important Exam Point: Yeh saari limitations (Loss, Order, Duplication, Corruption) 
-     upper layer par **TCP (Transmission Control Protocol)** handle karta hai!
+   - 📌 Important Point: Yeh saari problem (Loss, Reordering, Corruption) upper layer par **TCP (Transmission Control Protocol)** handle karta hai!
 
 ----------------------------------------------------------------------------------------------------
 📊 SUMMARY: RESPONSIBILITY DIVISION (IP vs TCP)
 ----------------------------------------------------------------------------------------------------
 
 +-----------------------------------+-----------------------------------+---------------------------+
-| Network Issue                     | Does IP Handle It?                | Who Handles It?           |
+| Network Problem                   | Does IP Handle It?                | Who Handles It?           |
 +-----------------------------------+-----------------------------------+---------------------------+
 | Packet Routing & Addressing       | YES                               | IP Protocol               |
 | Packet Loss / Drop                | NO                                | Transport Layer (TCP)     |
