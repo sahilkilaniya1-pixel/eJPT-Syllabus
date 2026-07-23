@@ -2,19 +2,6 @@ So, who own the Internet?
 well. nobody does. No single personor company owns the Internet or even controls it entirely. As a wide-area network. these smaller network are often owned and managed by a person or organization. the Internet, then, is realy defined by how connnections can be made between these network.
 
 
-::Local-area network connected across a distance to create a wide-area network
-
-Internet connnections:::
--------------------------------------------
-There are various technologies available that you can use to connect a home computer to the Internet
-
-::A phone modem Converts computer data into an analog audio signal for transfer over a telephone line, and then a modem at the destination converts it back again into data
-
-::A digital subscriber Line(DSL) uses regular copper phone line to transfer digital data to and from the phone company's central office
-
-::A cable modem uses the same line that your cable TV singnals come in on ot trasfer the data back and forth
-
-
 -----------------------------------------
 Types of network:
 Local-area network connected across a distance to create a wide-area network
@@ -25,3 +12,14 @@ These networks are provided by companies such as AT&T
 ,GTE and IBM
 
 ::Internet services provider(ISP) A company that provides other companies or individuals with access to the Internet
+
+-------------------------------------------
+Internet connnections:::
+
+There are various technologies available that you can use to connect a home computer to the Internet
+
+::A phone modem Converts computer data into an analog audio signal for transfer over a telephone line, and then a modem at the destination converts it back again into data
+
+::A digital subscriber Line(DSL) uses regular copper phone line to transfer digital data to and from the phone company's central office
+
+::A cable modem uses the same line that your cable TV singnals come in on ot trasfer the data back and forth
