@@ -109,3 +109,57 @@ aur Host Identification / Logical Addressing ka complete breakdown.
 ====================================================================================================
 === END OF INTERNET PROTOCOL (IP) NOTES ===
 ====================================================================================================
+====================================================================================================
+🌐 THE INTERNET PROTOCOL (IP) - PACKETIZATION & DATAGRAM STRUCTURE
+====================================================================================================
+Description: Message fragmentation, independent packet routing, IP Datagram format (Header + Data), 
+aur IP Versions (IPv4 vs IPv6) ka detailed breakdown.
+
+----------------------------------------------------------------------------------------------------
+📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. INDEPENDENT PACKET ROUTING & OUT-OF-ORDER DELIVERY:
+   - "A message is divided into a number of packets, each packet can, if necessary, be sent 
+     by a different route across the Internet. Packets can arrive in a different order than 
+     the order they were sent in."
+   - 💡 Explanation: IP Protocol mein pure message ko chhote **Packets** (Datagrams) mein toda 
+     jata hai. Network congestion ke hisab se har packet alag-alag path (route) se travel kar 
+     sakta hai.
+   - 📌 Important Consequence: Kyunki packets alag routes se aate hain, woh receiver par **Out-of-Order** 
+     (aage-piche) pahunch sakte hain. Unhe wapas correct sequence mein arrange karne ka kaam 
+     Transport Layer (TCP) karta hai.
+
+2. BASIC TRANSFER UNIT OF DATA (IP DATAGRAM STRUCTURE):
+   
+   ┌─────────────────────────┬──────────────────────────────────┐
+   │     Datagram Header     │        Datagram Data Area        │
+   └─────────────────────────┴──────────────────────────────────┘
+   
+   - Datagram Header: Contains control information like Source IP Address, Destination IP Address, 
+     TTL (Time to Live), Protocol Type, Version, and Header Checksum.
+   - Datagram Data Area: Contains the actual payload/message passed down from upper layers (e.g., TCP/UDP segment).
+
+3. IP VERSIONS (IPv4 vs IPv6):
+   - "The most widely used version of IP today is Internet Protocol Version 4 (IPv4). 
+     However, IP Version 6 (IPv6) is also beginning to be supported."
+   - 💡 Explanation: IPv4 sabse common version hai, par limited address capacity ki wajah se 
+     aaj kal IPv6 ka adoption rapidly grow kar raha hai.
+
+----------------------------------------------------------------------------------------------------
+📊 QUICK COMPARISON: IPv4 vs IPv6 (FOR EXAMS & INTERVIEWS)
+----------------------------------------------------------------------------------------------------
+
++-----------------------+----------------------------------+----------------------------------+
+| Feature               | IPv4 (Internet Protocol v4)      | IPv6 (Internet Protocol v6)      |
++-----------------------+----------------------------------+----------------------------------+
+| Address Size          | 32-bit (4 Bytes)                 | 128-bit (16 Bytes)               |
+| Address Format        | Dotted Decimal (e.g. 192.168.1.1)| Hexadecimal (e.g. 2001:db8::1)   |
+| Address Space         | ~4.3 Billion Addresses           | ~3.4 × 10^38 Addresses           |
+| Header Size           | Variable (20 to 60 Bytes)        | Fixed (40 Bytes)                 |
+| Security              | Optional (IPsec added later)     | Built-in / Mandatory (IPsec)     |
++-----------------------+----------------------------------+----------------------------------+
+
+====================================================================================================
+=== END OF IP PACKETIZATION NOTES ===
+====================================================================================================
