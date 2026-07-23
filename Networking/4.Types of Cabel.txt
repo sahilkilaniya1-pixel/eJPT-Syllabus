@@ -73,3 +73,8 @@ maximum length limits, aur unke practical applications ka complete breakdown.
 ====================================================================================================
 === END OF UTP CABLE NOTES ===
 ====================================================================================================
+
+
+::Twisted Pair Cable-
+Advantages:- Cheap, easy to work with
+Disadvantages :-Low data Rate , Short range
