@@ -34,4 +34,7 @@ Each layer deals with a particular aspect of network communicatioin.
 -Examples of application layer are application such as file transfer, electronic mail, remote login etc.
 
 ::Layer 6: Presentation Layer
--
+-Manages data-format information for networked communicatioins(the network's translator).
+-For outgoing messages, it converts data into a generic format for network Transmission; for incoming messages, it converts data from the generic network format to a format that the receiving application can understand.
+-This layer is also responsible for certain protocol conversions, data excryption/descryption, or data compression/decompression.
+-A special software facility called a "redirector" operates at this layer to determine if a request is network related on not and forward network-realted request to an appropriate network resource.
