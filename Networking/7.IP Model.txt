@@ -90,3 +90,9 @@ aur Receiver side par Decapsulation (Headers remove hona) ka complete flow and A
 ====================================================================================================
 === END OF OSI MODEL IN ACTION NOTES ===
 ====================================================================================================
+
+The TCP/IP Model::
+-The TCP/IP model is the network model used in the current Internet architecture.
+-it is a concise verison of the OSI Model. therefore, the layers in the TCP/IP protocol suite do not match exactly with those in the OSI model.
+-The original TCP/IP protocol suite was defined as four software layers built upon the hardware.
+-Today, however, TCP/IP is thought of as a five-layer model with the layers named similarly ot the ones in the OSI model.
