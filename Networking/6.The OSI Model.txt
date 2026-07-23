@@ -55,4 +55,7 @@ Each layer deals with a particular aspect of network communicatioin.
 -The transport layer is responsible for the delivery of a message from one process to another.
 
 ::Layer 3: Network Layer
-
+-Handle addressing messages for delivery, as well as translating logical network addresses and names into their physical counterparts.
+-Responsible for deciding how to route Transmission between computers
+-This layer also handle the decisions needed to get data from one point to the next point along a network path.
+-This layer also handles packet switching and network congestion  control.
