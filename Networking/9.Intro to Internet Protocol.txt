@@ -163,3 +163,51 @@ aur IP Versions (IPv4 vs IPv6) ka detailed breakdown.
 ====================================================================================================
 === END OF IP PACKETIZATION NOTES ===
 ====================================================================================================
+====================================================================================================
+📦 THE IP DATAGRAM - DEFINITION & CORE CONCEPTS
+====================================================================================================
+Description: IP Datagram ki formal definition, Datagram vs Packet terminology, Header 
+information, aur Variable data size ka detailed breakdown.
+
+----------------------------------------------------------------------------------------------------
+📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. DEFINITION OF A DATAGRAM:
+   - "A datagram is 'a self-contained, independent entity of data carrying sufficient 
+     information to be routed from the source to the destination computer without reliance 
+     on earlier exchanges between this source and destination computer and the transporting network.'"
+   - 💡 Explanation: Datagram ek **self-dependent data unit** hota hai. Iske paas apni poori 
+     routing info (Source IP, Destination IP, etc.) hoti hai. Isko route hone ke liye pichle 
+     kisi message ya connection state par depend hone ki zaroorat nahi hoti (hence, connectionless).
+
+2. TERMINOLOGY SYNONYM (Datagram vs Packet):
+   - "The term 'datagram' has become synonymous with the term 'packet.'"
+   - 💡 Explanation: Network Layer par "Datagram" aur "Packet" ko ek hi baat mana jata hai. 
+     Dono terms interchangeable tarike se use hoti hain.
+
+3. HEADER INFORMATION:
+   - "The information regarding the packet's destination and interpretation is in its header."
+   - 💡 Explanation: Packet kahan ja raha hai (Destination Address) aur use kaise interpret/process 
+     karna hai (Protocol type, Version, TTL, Checksum), yeh saari zaroori routing details 
+     **Header** section mein hoti hain.
+
+4. VARIABLE DATA PORTION:
+   - "The data portion which follows is variable in size."
+   - 💡 Explanation: Datagram ka Header fixed/defined format ka hota hai, jabki iske peeche 
+     ka **Data (Payload)** size fixed nahi hota—yeh variable size ka hota hai (MTU limits ke under).
+
+----------------------------------------------------------------------------------------------------
+📊 QUICK STRUCTURE REVISION
+----------------------------------------------------------------------------------------------------
+
++-----------------------------------+---------------------------------------------------+
+| IP Datagram Part                  | Main Purpose / Content                            |
++-----------------------------------+---------------------------------------------------+
+| Header (Fixed / Metadata)         | Source & Destination IP, TTL, Version, Checksum   |
+| Data / Payload (Variable Size)    | Actual Application/Transport Layer Message        |
++-----------------------------------+---------------------------------------------------+
+
+====================================================================================================
+=== END OF IP DATAGRAM NOTES ===
+====================================================================================================
