@@ -26,3 +26,12 @@ Each layer deals with a particular aspect of network communicatioin.
 -3-Network->Address and best path
 -2-Data Link->Access to media
 -1-Physical->Binary Transmission
+
+::Layer-7: Application Layer::
+-The top layer of the OSI model
+-Provides a set of interfaces for snding and receiving application and to use network services, such as:message handling and database query processing.
+-Responsibility-the application layer is responsible for providing services to the user.
+-Examples of application layer are application such as file transfer, electronic mail, remote login etc.
+
+::Layer 6: Presentation Layer
+-
