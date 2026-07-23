@@ -10,4 +10,6 @@ Network Devices:::
 
 ::5.Bridge-Bridge can be identified by the fact that they operated at the data link layer of the OSI model.Bridge have intelligence and can "Bridge" two of therir ports together at very high speed. they use a database of MAC addresses to determine where computers are located and very efficiently send frames only where they need  to go.The database is created dynamically as computer communicate on the network.
 
-::6.Routers-
+::6.Routers-Routers operate at the network layer of the OSI model and efficiently route information between Local Area Network. Since routers operate in the third layer, the network layer, they must understand layer 3 addressing... such as TCP/IP. A router will divide a broadcast domain by not forwarding broadcasts on one connected network to another connected network.
+
+::7.Gateways- they basically workds as the messenger agents that take data from one system, interpret it, and transfer it to another system. Gateways are also called protocal converters and can operate at any network layer.
