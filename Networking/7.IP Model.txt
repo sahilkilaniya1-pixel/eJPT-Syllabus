@@ -91,8 +91,89 @@ aur Receiver side par Decapsulation (Headers remove hona) ka complete flow and A
 === END OF OSI MODEL IN ACTION NOTES ===
 ====================================================================================================
 
-The TCP/IP Model::
--The TCP/IP model is the network model used in the current Internet architecture.
--it is a concise verison of the OSI Model. therefore, the layers in the TCP/IP protocol suite do not match exactly with those in the OSI model.
--The original TCP/IP protocol suite was defined as four software layers built upon the hardware.
--Today, however, TCP/IP is thought of as a five-layer model with the layers named similarly ot the ones in the OSI model.
+====================================================================================================
+🌐 THE TCP/IP PROTOCOL SUITE - MASTER REFERENCE GUIDE
+====================================================================================================
+Description: Modern Internet Architecture ka base (TCP/IP Model), OSI Model ke sath comparison,
+4-Layer vs 5-Layer Version, aur har Layer par kaam karne wale Protocols.
+
+----------------------------------------------------------------------------------------------------
+1. INTRODUCTION TO TCP/IP MODEL
+----------------------------------------------------------------------------------------------------
+TCP/IP (Transmission Control Protocol / Internet Protocol) woh architectural framework hai 
+jis par aaj ka poora Global Internet aur Web applications run karte hain.
+
+🛠️ KEY HIGHLIGHTS & HISTORY:
+- OSI Model Practical vs Theoretical: OSI reference model ek theoretical model tha, jabki TCP/IP 
+  ek practical model hai jo reality mein internet standard ban gaya.
+- OSI vs TCP/IP Conciseness: TCP/IP OSI model ka ek simplified version hai. Isliye iski layers 
+  OSI model se exact match nahi karti.
+- Layer Evolution: 
+  * Original Model: Pehle TCP/IP ko Hardware ke upar 4 Software Layers ka model mana jata tha.
+  * Modern Model: Aaj ke time par TCP/IP ko 5-Layer Model ke roop mein padha aur use kiya jata hai.
+
+----------------------------------------------------------------------------------------------------
+2. OSI MODEL VS TCP/IP MODEL (LAYER MAPPING CHART)
+----------------------------------------------------------------------------------------------------
+
++-----------------------+----------------------------------+----------------------------------+
+| OSI 7-Layer Model     | Modern TCP/IP (5-Layer Model)    | Original TCP/IP (4-Layer Model)  |
++-----------------------+----------------------------------+----------------------------------+
+| 7. Application        |                                  |                                  |
+| 6. Presentation       | 5. Application Layer             | 4. Application Layer             |
+| 5. Session            |                                  |                                  |
++-----------------------+----------------------------------+----------------------------------+
+| 4. Transport          | 4. Transport Layer               | 3. Transport Layer               |
++-----------------------+----------------------------------+----------------------------------+
+| 3. Network            | 3. Network / Internet Layer      | 2. Internet Layer                |
++-----------------------+----------------------------------+----------------------------------+
+| 2. Data Link          | 2. Data Link Layer               | 1. Network Access / Link Layer   |
+| 1. Physical           | 1. Physical Layer                |    (Host-to-Network)             |
++-----------------------+----------------------------------+----------------------------------+
+
+----------------------------------------------------------------------------------------------------
+3. 5-LAYER TCP/IP MODEL DEEP DIVE & PROTOCOLS
+----------------------------------------------------------------------------------------------------
+
+:: LAYER 5: APPLICATION LAYER ::
+- OSI ke Application, Presentation, aur Session teeno layers ke kaam (UI, formatting, encryption, 
+  aur session control) akele yahi layer handle karti hai.
+- Common Protocols: HTTP, HTTPS, FTP, SMTP, DNS, SSH, Telnet, DHCP.
+
+:: LAYER 4: TRANSPORT LAYER ::
+- End-to-End communication, error control, aur process-to-process delivery handle karti hai.
+- Common Protocols:
+  * TCP (Transmission Control Protocol): Connection-oriented & reliable (e.g., Web browsing, Email).
+  * UDP (User Datagram Protocol): Connection-less & super fast (e.g., Video calls, Gaming, Streaming).
+
+:: LAYER 3: NETWORK / INTERNET LAYER ::
+- Packets ka logical address (IP) handle karti hai aur shortest path routing karti hai.
+- Common Protocols: IP (IPv4 / IPv6), ICMP (Ping), ARP (Address Resolution), IPsec.
+
+:: LAYER 2: DATA LINK LAYER ::
+- Local network/node-to-node framing aur hardware MAC addressing handle karti hai.
+- Common Standards: Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), PPP.
+
+:: LAYER 1: PHYSICAL LAYER ::
+- Raw binary bits (0s & 1s) ko physical signals (copper electric pulses, light waves, radio waves) 
+  mein badal kar transmit karti hai.
+
+====================================================================================================
+📊 EXAM & INTERVIEW REVISION SUMMARY
+====================================================================================================
+
++-----------------------+---------------------------------------+----------------------------------+
+| Feature               | OSI Model                             | TCP/IP Model                     |
++-----------------------+---------------------------------------+----------------------------------+
+| Nature                | Theoretical / Reference Model         | Practical / Implementation Standard|
+| Total Layers          | 7 Layers                              | 4 or 5 Layers                    |
+| Development           | Standard before Protocols were made   | Protocols developed first        |
+| Session/Presentation  | Separate individual layers            | Merged into Application Layer    |
+| Transport Reliability | Always Reliable (Connection-oriented) | Choice of Reliable (TCP) or     |
+|                       |                                       | Unreliable/Fast (UDP)            |
++-----------------------+---------------------------------------+----------------------------------+
+
+====================================================================================================
+=== END OF TCP/IP MODEL MASTER NOTES ===
+====================================================================================================
+
