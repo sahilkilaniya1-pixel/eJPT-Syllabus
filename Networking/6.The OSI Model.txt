@@ -64,3 +64,6 @@ Each layer deals with a particular aspect of network communicatioin.
 -Handles speical data frames (packets) between the Network Layer and the Physical layer
 -At the receiving end, this layer packages raw data from the physical layer into data frames for delivery to the network Layer.
 -At the sending end this layer handle conversion of data into raw formats that can be handled by the Physical Layer.
+
+::Layer 3: Physical Layer
+-
