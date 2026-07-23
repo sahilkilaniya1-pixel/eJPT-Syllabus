@@ -18,3 +18,10 @@ There are various technologies available that you can use to connect a home comp
 -----------------------------------------
 Types of network:
 Local-area network connected across a distance to create a wide-area network
+
+
+::Internet backbone- A set of high-speed network that carry internet traffic
+These networks are provided by companies such as AT&T
+,GTE and IBM
+
+::Internet services provider(ISP) A company that provides other companies or individuals with access to the Internet
