@@ -43,3 +43,17 @@ A dedicated link/path is established across the sender and the receiver which is
 To improve the efficiency of transferring information over a shared communication line, message are divided into fixed-sized, numbered packets
 
 Network devices called routers are used to direct packets between networks
+::Advantages::
+-Efficient use of Network.
+-high Data Transmisson.
+-No big memory required.
+-No dedicated path required.
+-Sutitable for video/voice calls.
+-Less usage cost.
+
+::Disadvantages::
+-Order mismatch.
+-Transmission delay.
+-Packet loss.
+-Implementation cost.
+-Security issues.
