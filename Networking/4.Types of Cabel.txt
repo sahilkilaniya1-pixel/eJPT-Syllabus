@@ -98,3 +98,21 @@ Disadvantages::
 -Expensive to install
 -Security issue
 -grounding nesessary
+
+
+::Optical fiber cable::::
+Optical cable are used to transfer digital data signals in the form of light up to distance of hundreds of miles with hgiher throughput rates.
+
+Two common types of fiber optics are:
+Single-mode fiber (SMF)
+Multi-mode fiber (MMF)
+
+::Advantages::
+-Extremely high bandwidth
+-thinner and Light-weigjted
+-Resistance to Electromangnetic interference
+-Longer distance
+-Low Security Risk
+
+::Disadvantages::
+cost, very fragile, difficult to install, Attenuation & Dispersion
