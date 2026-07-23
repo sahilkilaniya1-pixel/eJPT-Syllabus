@@ -1,0 +1,92 @@
+====================================================================================================
+📦 OSI MODEL IN ACTION: DATA ENCAPSULATION & DECAPSULATION PROCESS
+====================================================================================================
+Description: Sender side par Data Encapsulation (Headers add hona), Physical Medium traversal, 
+aur Receiver side par Decapsulation (Headers remove hona) ka complete flow and ASCII architecture.
+
+----------------------------------------------------------------------------------------------------
+🎨 ENCAPSULATION & DECAPSULATION ARCHITECTURE DIAGRAM
+----------------------------------------------------------------------------------------------------
+
+        [ SENDER COMPUTER ]                                           [ RECEIVER COMPUTER ]
+                 │                                                              ▲
+                 ▼                                                              │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  7  │  [D7]  H7             │                                     │  [D7]  H7             │  7
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  6  │  [D6]  H6             │                                     │  [D6]  H6             │  6
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  5  │  [D5]  H5             │                                     │  [D5]  H5             │  5
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  4  │  [D4]  H4             │                                     │  [D4]  H4             │  4
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  3  │  [D3]  H3             │                                     │  [D3]  H3             │  3
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  2  │ T2  │  [D2]  │ H2     │                                     │ T2  │  [D2]  │ H2     │  2
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 ▼                                                             │
+     ┌───────────────────────┐                                     ┌───────────────────────┐
+  1  │ 010101010101010100 │H1│                                     │ 010101010101010100 │H1│  1
+     └───────────┬───────────┘                                     └───────────▲───────────┘
+                 │                                                             │
+                 └───────────────► ═════════════════════════ ──────────────────┘
+                                   [ TRANSMISSION MEDIUM ]
+                                  (Cable / Air / Fiber Optic)
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED EXPLANATION OF SYMBOLS & MECHANICS (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. MEANING OF TERMINOLOGIES:
+   - D (Data): Original user message ya application data.
+   - H (Header): Control information jo har layer attach karti hai (Addresses, Sequence numbers, etc.).
+   - T2 (Trailer): Data Link Layer (Layer 2) ke end par lagne wala Error Checking code (FCS/CRC).
+
+2. SENDER SIDE: DATA ENCAPSULATION (Top-to-Bottom Flow ⬇️)
+   - Application Layer (L7) user data generate karta hai aur apna Header (H7) lagata hai.
+   - Presentation (L6) aur Session (L5) layers respective headers (H6, H5) add karti hain.
+   - Transport Layer (L4) header (H4) lagati hai (Port numbers & Sequence numbers).
+   - Network Layer (L3) header (H3) add karti hai (Logical IP Addresses).
+   - Data Link Layer (L2) header (H2 - MAC Address) AND TRAILER (T2 - Error Detection) dono attach karti hai.
+   - Physical Layer (L1) poore packet aur headers ko Raw Binary Bits (0s & 1s) aur Signals mein badal deti hai.
+
+   > KEY CONCEPT: Har pichli layer ka poora message (Data + Header) agli layer ke liye sirf 'Data (D)' ban jata hai.
+
+3. PHYSICAL TRANSMISSION MEDIUM:
+   - Encapsulated bit-stream coaxial, twisted-pair, fiber-optic cable, ya wireless signals ke zariye 
+     destination device tak travel karti hai.
+
+4. RECEIVER SIDE: DATA DECAPSULATION (Bottom-to-Top Flow ⬆️)
+   - Layer 1 physical signals ko binary bits (0s & 1s) mein convert karti hai.
+   - Layer 2 Trailer (T2) se error check karti hai aur H2 header read karke peel-off (hata) deti hai.
+   - Layer 3 se Layer 7 tak har layer apna-apna respective Header (H3 ➔ H4 ➔ H5 ➔ H6 ➔ H7) read karti hai, 
+     use process karti hai aur strip (hata) deti hai.
+   - Aakhir mein original clean message (Data) user screen par render ho jata hai.
+
+====================================================================================================
+📊 PDU (PROTOCOL DATA UNIT) NAMES AT EACH LAYER FOR INTERVIEWS
+====================================================================================================
+
++-----------------------+-----------------------+--------------------------------------------------+
+| OSI Layer             | PDU Name (Data Format)| What gets attached?                              |
++-----------------------+-----------------------+--------------------------------------------------+
+| Layer 7, 6, 5         | Data                  | Upper Layer Headers (H7, H6, H5)                 |
+| Layer 4 (Transport)   | Segment               | Transport Header (H4 - Source & Dest Port)       |
+| Layer 3 (Network)     | Packet                | Network Header (H3 - Source & Dest IP)           |
+| Layer 2 (Data Link)   | Frame                 | Frame Header (H2 - MAC) + Trailer (T2 - CRC)     |
+| Layer 1 (Physical)    | Bits (0s & 1s)        | Physical Signals / Encoding                      |
++-----------------------+-----------------------+--------------------------------------------------+
+
+====================================================================================================
+=== END OF OSI MODEL IN ACTION NOTES ===
+====================================================================================================
