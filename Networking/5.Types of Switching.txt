@@ -19,3 +19,11 @@ Each intermediate device receive the message and store it until the next device 
 -costly as store and forward devices are expensice
 -can lead to security issues if hacked 
 -not reliable
+
+
+::Circuit Switching::
+Circuit Switching is generally useed in the public network. It come into existence for handling voice traffic in addition to digital data.
+
+After the link has been sets in between the sender and the receiver then the information is forwarded continously over the provided link.
+
+A dedicated link/path is established across the sender and the receiver which is maintained for the entire duration of conversation.
