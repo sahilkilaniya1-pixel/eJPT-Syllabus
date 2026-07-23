@@ -37,3 +37,9 @@ A dedicated link/path is established across the sender and the receiver which is
 -Other nodes cannot use same channel.
 -Require more bandwidth.
 -time required to establish a physical link is too long.
+
+
+::Packet Switching::::
+To improve the efficiency of transferring information over a shared communication line, message are divided into fixed-sized, numbered packets
+
+Network devices called routers are used to direct packets between networks
