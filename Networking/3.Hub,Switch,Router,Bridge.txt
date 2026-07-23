@@ -1,5 +1,7 @@
 Network Devices:::
 
-::1.HUB-
-::2.Repeater-
+::1.HUB-Hubs connect computers together in a star topology network,Due to their desgin, they increase the chances for collisions. Hubs operate in the physical Layer of the OSI model and hace no intelligence.Hubs flood incoming packets to all ports all the time.
+
+::2.Repeater- A Repeater is an electronic device that receives a signal and retransmits it at a higher level and/or higher power, or onto the other side of an obstraction, so that the signal can cover longer distance without degradation.
+
 ::3.Modem-
