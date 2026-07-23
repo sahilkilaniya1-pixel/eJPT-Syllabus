@@ -5,3 +5,71 @@ Unguided -> Radio Waves, Microwaves, Infrared
 
 
 ::Twisted pair Cabel- Pairs of wires (the forward and return conductors of a single circuit) are twisted together for the purposes of canceling out electromagnetic interference (EMI) from other wire pairs and from external sources.
+
+====================================================================================================
+🔌 UTP CATEGORIES - COPPER CABLE REFERENCE CHART
+====================================================================================================
+Description: Unshielded Twisted Pair (UTP) copper network cables ki categories, speeds (Data Rate),
+maximum length limits, aur unke practical applications ka complete breakdown.
+
+----------------------------------------------------------------------------------------------------
+📊 QUICK REFERENCE TABLE
+----------------------------------------------------------------------------------------------------
+
++--------------+--------------+-------------+--------------+-------------------------------------------------+
+| UTP Category | Data Rate    | Max Length  | Cable Type   | Application / Common Uses                       |
++--------------+--------------+-------------+--------------+-------------------------------------------------+
+| CAT1         | Up to 1Mbps  | -           | Twisted Pair | Old Telephone Cables                            |
+| CAT2         | Up to 4Mbps  | -           | Twisted Pair | Token Ring Networks                             |
+| CAT3         | Up to 10Mbps | 100m        | Twisted Pair | Token Ring & 10BASE-T Ethernet                  |
+| CAT4         | Up to 16Mbps | 100m        | Twisted Pair | Token Ring Networks                             |
+| CAT5         | Up to 100Mbps| 100m        | Twisted Pair | Ethernet, FastEthernet, Token Ring              |
+| CAT5e        | Up to 1 Gbps | 100m        | Twisted Pair | Ethernet, FastEthernet, Gigabit Ethernet        |
+| CAT6         | Up to 10Gbps | 100m        | Twisted Pair | GigabitEthernet, 10G Ethernet (55 meters max)   |
+| CAT6a        | Up to 10Gbps | 100m        | Twisted Pair | GigabitEthernet, 10G Ethernet (55 meters)       |
+| CAT7         | Up to 10Gbps | 100m        | Twisted Pair | GigabitEthernet, 10G Ethernet (100 meters full) |
++--------------+--------------+-------------+--------------+-------------------------------------------------+
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED BREAKDOWN & EXPLANATION (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. CAT1 (Category 1):
+   - Speed: Up to 1 Mbps
+   - Use: Purane landline telephone lines ke liye use hoti thi. Network data ke liye suitable nahi hai.
+
+2. CAT2 (Category 2):
+   - Speed: Up to 4 Mbps
+   - Use: Purane Token Ring networks mein voice aur basic data transfer ke liye use hoti thi.
+
+3. CAT3 (Category 3):
+   - Speed: Up to 10 Mbps (10BASE-T) | Max Distance: 100m
+   - Use: 10 Mbps Ethernet networks aur legacy phone systems ke liye use hui.
+
+4. CAT4 (Category 4):
+   - Speed: Up to 16 Mbps | Max Distance: 100m
+   - Use: Mainstream Token Ring networks mein use hui (aaj kal obsolete hai).
+
+5. CAT5 (Category 5):
+   - Speed: Up to 100 Mbps (Fast Ethernet) | Max Distance: 100m
+   - Use: Pehle sabse zyada standard LAN cabling ke liye use hoti thi.
+
+6. CAT5e (Category 5 Enhanced):
+   - Speed: Up to 1 Gbps (1000 Mbps - Gigabit Ethernet) | Max Distance: 100m
+   - Use: Modern offices aur homes mein sabse common budget ethernet cable. Cross-talk/interference kam karti hai.
+
+7. CAT6 (Category 6):
+   - Speed: Up to 10 Gbps | Max Distance: 100m (Standard speed par), 10Gbps speed par max 55 meters tak support karti hai.
+   - Use: Modern high-speed Gigabit Ethernet aur server rooms ke liye.
+
+8. CAT6a (Category 6 Augmented):
+   - Speed: Up to 10 Gbps | Max Distance: 100m
+   - Use: Higher bandwidth (500 MHz) ke sath 10 Gigabit speeds ko lambi doori tak carry karti hai.
+
+9. CAT7 (Category 7):
+   - Speed: Up to 10 Gbps | Max Distance: 100m
+   - Use: Heavy shielding ke sath aati hai, data centers aur high-noise industrial environments ke liye best hai.
+
+====================================================================================================
+=== END OF UTP CABLE NOTES ===
+====================================================================================================
