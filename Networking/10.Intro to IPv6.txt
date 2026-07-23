@@ -1,0 +1,81 @@
+====================================================================================================
+📦 THE IPv4 HEADER FORMAT - STRUCTURE & FIELD-BY-FIELD BREAKDOWN
+====================================================================================================
+Description: IPv4 Datagram Header ka 32-bit wide diagram format, saare fields ke bit sizes, 
+aur unka detailed Hinglish explanation.
+
+----------------------------------------------------------------------------------------------------
+🎨 IPv4 HEADER DIAGRAM (32-Bit Wide Structure)
+----------------------------------------------------------------------------------------------------
+
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+| Version | Header Length | Type of Service |    Total Length (16 bits)     |
+| (4 bits)|   (4 bits)    |    (8 bits)     |                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|        Identification (16 bits)       | 0 | DF | MF| Fragment Offset  |
+|                                       |   |    |   |    (13 bits)     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+| Time to Live (8 bits) | Protocol (8 bits) | Header Checksum (16 bits) |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Source IP Address (32 bits)                    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                  Destination IP Address (32 bits)                 |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Options (0 - 40 bytes)                         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               Data                                |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED BREAKDOWN OF IPv4 HEADER FIELDS (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. ROW 1: BASIC METADATA & LENGTH
+   - Version (4 bits): Yeh IP ka version batata hai. IPv4 ke liye iski value binary mein `0100` (4) hoti hai.
+   - Header Length / IHL (4 bits): Header kitna bada hai yeh batata hai. Multiplied by 4 bytes. 
+     (Minimum = 20 Bytes, Maximum = 60 Bytes).
+   - Type of Service / ToS (8 bits): Quality of Service (QoS) aur packet priority/latency set karne ke liye.
+   - Total Length (16 bits): Pure IP Datagram ka total size batata hai (Header + Data). 
+     Maximum size = 65,535 bytes.
+
+2. ROW 2: FRAGMENTATION CONTROL (Jab packet bada hota hai)
+   - Identification (16 bits): Original packet ki unique ID. Jab ek bada packet tut-ta (fragment) hai, 
+     toh saare fragments ka Identification number same rehta hai taaki receiver unhe jod sake.
+   - Flags (3 bits):
+     * Bit 0: Reserved (Hamesha 0 hota hai).
+     * DF (Don't Fragment): Agar 1 hai, toh router packet ko fragment nahi kar sakta.
+     * MF (More Fragments): Agar 1 hai, matlab abhi aur fragments aane baaki hain. Agar 0 hai, toh yeh aakhri fragment hai.
+   - Fragment Offset (13 bits): Batata hai ki yeh particular fragment original packet mein kis position/order par fit hota hai.
+
+3. ROW 3: LIFETIME, PROTOCOL & INTEGRITY
+   - Time to Live / TTL (8 bits): Packet ka life counter (Hop count). Har router par yeh 1 se kam hota hai. 
+     Jab TTL = 0 ho jata hai, toh router packet drop kar deta hai taaki infinite routing loops na banein.
+   - Protocol (8 bits): Transport Layer ka kaun sa protocol andar ka payload handle kar raha hai (e.g., 6 = TCP, 17 = UDP, 1 = ICMP).
+   - Header Checksum (16 bits): Sirf IP Header mein aaye error ko detect karne ke liye error detection calculation.
+
+4. ROW 4 & ROW 5: IP ADDRESSES
+   - Source IP Address (32 bits): Bhejne wale (Sender) device ka 32-bit IPv4 Address.
+   - Destination IP Address (32 bits): Receive karne wale (Receiver) device ka 32-bit IPv4 Address.
+
+5. ROW 6 & ROW 7: EXTRA OPTIONS & PAYLOAD
+   - Options (0 to 40 bytes): Security, Source Routing, ya Testing ke liye optional space.
+   - Data / Payload: Actual data jo Upper Layers (TCP, UDP, ICMP etc.) se bhejni hoti hai.
+
+----------------------------------------------------------------------------------------------------
+📊 QUICK REVISION SUMMARY (Exam/Interview Quick Points)
+----------------------------------------------------------------------------------------------------
+
++-----------------------+-------------------------------------------------------------------+
+| Metric                | Standard Value / Range                                            |
++-----------------------+-------------------------------------------------------------------+
+| Default Header Size   | Minimum 20 Bytes (bina Options ke) to Maximum 60 Bytes            |
+| Address Field Size    | 32 Bits (4 Bytes) each for Source and Destination                 |
+| Maximum Datagram Size | 65,535 Bytes                                                      |
+| Loop Prevention Field | TTL (Time To Live)                                                |
++-----------------------+-------------------------------------------------------------------+
+
+====================================================================================================
+=== END OF IPv4 HEADER FORMAT NOTES ===
+====================================================================================================
