@@ -78,3 +78,7 @@ maximum length limits, aur unke practical applications ka complete breakdown.
 ::Twisted Pair Cable-
 Advantages:- Cheap, easy to work with
 Disadvantages :-Low data Rate , Short range
+
+
+
+::Coaxial Cable- coaxial cable is a type of copper cable specially built with a metal shield and other components engineered to block signal interference. it is primarily used by cable TV companies to connect their satellite antenna facilities to customer homes and businesses.
