@@ -9,3 +9,13 @@ Here each message is treated as an independent unit and include its own destinat
 
 Each intermediate device receive the message and store it until the next device is ready to receive it. For this reason a message switching network is sometimes called as Store and Forward Switching.
 
+::Advantages::
+-more devices share the same channel
+-Congestion can be reduced
+-Supports message lengths of unlimited size
+
+::Disadvantages::
+-Not compatible for voice and video
+-costly as store and forward devices are expensice
+-can lead to security issues if hacked 
+-not reliable
