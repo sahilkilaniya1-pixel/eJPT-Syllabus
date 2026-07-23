@@ -59,3 +59,8 @@ Each layer deals with a particular aspect of network communicatioin.
 -Responsible for deciding how to route Transmission between computers
 -This layer also handle the decisions needed to get data from one point to the next point along a network path.
 -This layer also handles packet switching and network congestion  control.
+
+::Layer 2: Data link Layer
+-Handles speical data frames (packets) between the Network Layer and the Physical layer
+-At the receiving end, this layer packages raw data from the physical layer into data frames for delivery to the network Layer.
+-At the sending end this layer handle conversion of data into raw formats that can be handled by the Physical Layer.
