@@ -84,3 +84,17 @@ Disadvantages :-Low data Rate , Short range
 ::Coaxial Cable- coaxial cable is a type of copper cable specially built with a metal shield and other components engineered to block signal interference. it is primarily used by cable TV companies to connect their satellite antenna facilities to customer homes and businesses.
 
 plastic cover- insulator- outer conductor shield- insulator- inner conductor
+
+
+Advantages:::
+-used in high frequency applications
+-Improve attenuation and shiled effectiveness
+-less susceptible to noise or interference compare to twisted pair cable.
+-high bandwidth
+-cost of coaxial cable is less
+
+Disadvantages::
+-bulky,thick,stiff
+-Expensive to install
+-Security issue
+-grounding nesessary
