@@ -4,4 +4,4 @@ Network Devices:::
 
 ::2.Repeater- A Repeater is an electronic device that receives a signal and retransmits it at a higher level and/or higher power, or onto the other side of an obstraction, so that the signal can cover longer distance without degradation.
 
-::3.Modem-
+::3.Modem-Modem(from modulator-demodulator) is a device that turns the digital 1s and 0s of a personal computer into sounds that can be transmitted over the telephone lines and once received on the other side, converts those sounds back into a from used by a USB, Ethernet, serial, or network connection. Modems are generally classified by the amount of data they can send in a given time, normally measured in bits per second, or "bps".
