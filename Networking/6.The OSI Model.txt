@@ -66,4 +66,9 @@ Each layer deals with a particular aspect of network communicatioin.
 -At the sending end this layer handle conversion of data into raw formats that can be handled by the Physical Layer.
 
 ::Layer 1: Physical Layer
--
+-Converts bits into electronic signal for outgoing message.
+-converts electronic signals into bits for incoming message.
+-This layer manages the interface between the the computer and the network medium (caox, twisted pair, etc).
+-This layer tells the driver software for the MAU (media attachment unit, ex. network interface cards(NICs,modems, etc.))What needs to be send across the medium
+-The bottom layer of the OSI model.
+-The physical layer is responsible for movements of individual bits from one hop (node) to the next.
