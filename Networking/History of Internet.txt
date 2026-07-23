@@ -23,3 +23,4 @@ There are various technologies available that you can use to connect a home comp
 ::A digital subscriber Line(DSL) uses regular copper phone line to transfer digital data to and from the phone company's central office
 
 ::A cable modem uses the same line that your cable TV singnals come in on ot trasfer the data back and forth
+
