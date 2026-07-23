@@ -38,3 +38,13 @@ Each layer deals with a particular aspect of network communicatioin.
 -For outgoing messages, it converts data into a generic format for network Transmission; for incoming messages, it converts data from the generic network format to a format that the receiving application can understand.
 -This layer is also responsible for certain protocol conversions, data excryption/descryption, or data compression/decompression.
 -A special software facility called a "redirector" operates at this layer to determine if a request is network related on not and forward network-realted request to an appropriate network resource.
+
+::Layer 5: Session Layer
+-Enable two networked resource to hold ongoing communications (called a session) across a network (dialog session).
+-Application on either end of the session are able to exchange data for duration of the session.
+    This Layer is:
+-responsible for initating, maintaining and terminating sessions
+-Responsible for security and access control to session information (via session participant identification).
+-Responsible for synchronization services, and for checkpoint services.
+
+::Layer 4:transport
