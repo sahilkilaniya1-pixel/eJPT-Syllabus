@@ -1,0 +1,6 @@
+::Open System::
+The international orgranization for Standardization (ISO) established the Open systems interconnection (OSI) Reference model
+
+Each layer deals with a particular aspect of network communicatioin.
+
+=Isolated System-Closed system- Open system
