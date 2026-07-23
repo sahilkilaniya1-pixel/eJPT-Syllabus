@@ -1,0 +1,66 @@
+====================================================================================================
+⚔️ TCP/IP vs OSI MODEL - DETAILED COMPARISON CHART
+====================================================================================================
+Description: Open System Interconnection (OSI) aur Transmission Control Protocol / Internet 
+Protocol (TCP/IP) ke beech point-by-point comparative breakdown (Exams & Interviews Special).
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARISON TABLE
+----------------------------------------------------------------------------------------------------
+
++---+----------------------------------------------------+----------------------------------------------------+
+| # | OSI (Open System Interconnection)                  | TCP/IP (Transmission Control Protocol / IP)        |
++---+----------------------------------------------------+----------------------------------------------------+
+| 1 | OSI is a generic, protocol independent standard,   | TCP/IP model is based on standard protocols around |
+|   | acting as a communication gateway between the      | which the Internet has developed. It is a          |
+|   | network and end user.                              | communication protocol which allows connection of   |
+|   |                                                    | hosts over a network.                              |
++---+----------------------------------------------------+----------------------------------------------------+
+| 2 | In OSI model, the transport layer guarantees the   | In TCP/IP model, the transport layer does not      |
+|   | delivery of packets.                               | guarantees delivery of packets. Still, the TCP/IP  |
+|   |                                                    | model is more reliable.                            |
++---+----------------------------------------------------+----------------------------------------------------+
+| 3 | Follows vertical approach.                         | Follows horizontal approach.                       |
++---+----------------------------------------------------+----------------------------------------------------+
+| 4 | OSI model has a separate Presentation layer and    | TCP/IP does not have a separate Presentation       |
+|   | Session layer.                                     | layer or Session layer.                            |
++---+----------------------------------------------------+----------------------------------------------------+
+| 5 | Transport Layer is Connection Oriented.            | Transport Layer is both Connection Oriented and    |
+|   |                                                    | Connection-less.                                   |
++---+----------------------------------------------------+----------------------------------------------------+
+| 6 | Network Layer is both Connection Oriented and      | Network Layer is Connection-less.                  |
+|   | Connection-less.                                   |                                                    |
++---+----------------------------------------------------+----------------------------------------------------+
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED BREAKDOWN & EXPLANATION (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. PROTOCOL DEPENDENCY (Standard vs Implementation):
+   - OSI Model: Refence model hai jo kisi specific protocol par dependent nahi hai (Generic/Theoretical).
+   - TCP/IP Model: Real-world internet protocols (TCP, IP, UDP, HTTP) ke aas-paas hi design kiya gaya hai.
+
+2. RELIABILITY & GUARANTEE:
+   - OSI Model: Transport layer strictly delivery guarantee karta hai.
+   - TCP/IP Model: Transport layer par TCP (Reliable) aur UDP (Unreliable/Fast) dono ka option hota hai, 
+     isliye yeh modern requirement ke hisab se zyada practical aur reliable mana jata hai.
+
+3. DESIGN APPROACH (Vertical vs Horizontal):
+   - OSI Model: Strict Vertical layering follow karta hai (har layer apne upar-niche wali layer par dependent hai).
+   - TCP/IP Model: Horizontal approach follow karta hai jahan protocols loose-coupling ke sath kaam karte hain.
+
+4. LAYER ARCHITECTURE (Presentation & Session Layers):
+   - OSI Model: Presentation aur Session layers dedicatedly alag-alag kaam karti hain.
+   - TCP/IP Model: Separate Presentation ya Session layer nahi hoti, inka kaam direct Application layer hi handle kar leti hai.
+
+5. TRANSPORT LAYER FLEXIBILITY:
+   - OSI Model: Transport Layer strictly Connection-Oriented hoti hai.
+   - TCP/IP Model: Transport Layer Connection-Oriented (TCP) aur Connection-less (UDP) dono support karti hai.
+
+6. NETWORK LAYER NATURE:
+   - OSI Model: Network Layer Connection-Oriented (X.25) aur Connection-less (IP) dono support karti hai.
+   - TCP/IP Model: Network Layer purely Connection-less hoti hai (IP protocol direct packets bhejta hai).
+
+====================================================================================================
+=== END OF TCP/IP VS OSI COMPARISON NOTES ===
+====================================================================================================
