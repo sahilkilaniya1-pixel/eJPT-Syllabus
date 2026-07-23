@@ -8,4 +8,4 @@ Network Devices:::
 
 ::4.Switches-Switches provides a central connection between two or more computers on a network, but with some intelligence. they provides traffic control for packets; rather than forwarding data to all the connected ports, a switch forwards data only to the part on which  the destination system is connected. They use a database of MAC addresses to determine where computers are located and very efficiently send packets only where they need to go.
 
-::5.Bridge-
+::5.Bridge-Bridge can be identified by the fact that they operated at the data link layer of the OSI model.Bridge have intelligence and can "Bridge" two of therir ports together at very high speed. they use a database of MAC addresses to determine where computers are located and very efficiently send frames only where they need  to go.The database is created dynamically as computer communicate on the network.
