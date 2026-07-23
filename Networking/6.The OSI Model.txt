@@ -7,3 +7,8 @@ Each layer deals with a particular aspect of network communicatioin.
 
 
 ::communicatioin Architecture::
+-Strategy for connecting host computer and other communicating equipment.
+-Defines necessary elements for data communication between devies.
+-A communicatioin architecture, therefore,define a standard for the communicating hosts.
+-A programmer format data in a manner defined by the communicatioin architecture and passes it on to the communicatioin software.
+-Separating communication function adds flexibility, for example, we do not need to modify the entire host software to include more communicatioin devices.
