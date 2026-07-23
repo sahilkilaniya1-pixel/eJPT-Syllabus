@@ -1,0 +1,2 @@
+::Switching::
+A network consists of many switching devices. In order to connect multiple devices, one solution could be to have a point to point connection in between pair of devices. But this increases the number of connection.
