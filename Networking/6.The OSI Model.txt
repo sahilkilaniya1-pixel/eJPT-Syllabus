@@ -47,4 +47,9 @@ Each layer deals with a particular aspect of network communicatioin.
 -Responsible for security and access control to session information (via session participant identification).
 -Responsible for synchronization services, and for checkpoint services.
 
-::Layer 4:transport
+::Layer 4:transport Layer
+-Manages the Transmission of data across a network.
+-Manages the flow of data between parties by segmenting long data streams into smaller data chunks (based on allowed "Packet" size for a given Transmission medium).
+-Reassembles chunks into their original sequence at the receiving end.
+-Provides acknowledgements successfull Transmission and requests
+-The transport layer is responsible for the delivery of a message from one process to another.
