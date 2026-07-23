@@ -1,2 +1,5 @@
 ::Switching::
 A network consists of many switching devices. In order to connect multiple devices, one solution could be to have a point to point connection in between pair of devices. But this increases the number of connection.
+
+
+The other solution could be to have a central device and connect every device to each other via the central device which is generally known as Star topology. A switched network is made up of a series of interconnected node called switches.
