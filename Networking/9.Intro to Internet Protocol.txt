@@ -1,0 +1,59 @@
+====================================================================================================
+📚 THE TCP/IP PROTOCOL STACK - LAYER-WISE PROTOCOLS REFERENCE GUIDE
+====================================================================================================
+Description: OSI Model, TCP/IP Model, aur har specific layer par kaam karne wale real-world 
+TCP/IP Protocols (Protocol Suite) ka complete breakdown.
+
+----------------------------------------------------------------------------------------------------
+🎨 PROTOCOL STACK MAPPING DIAGRAM
+----------------------------------------------------------------------------------------------------
+
++------------------+-------------------+-----------------------------------------------------------+
+| OSI Model        | TCP/IP Model      | TCP/IP Protocol Suite (Protocols Used at Each Layer)      |
++------------------+-------------------+-----------------------------------------------------------+
+| Application      |                   |                                                           |
+| Presentation     | Application Layer |  [ Telnet ] [ FTP ] [ SMTP ] [ DNS ] [ RIP ] [ SNMP ]     |
+| Session          |                   |                                                           |
++------------------+-------------------+-----------------------------------------------------------+
+| Transport        | Transport Layer   |  [ TCP ]                              [ UDP ]             |
++------------------+-------------------+-----------------------------------------------------------+
+| Network          | Network Layer     |  [ ARP ]             [ IP ]          [ IGMP ]  [ ICMP ]   |
++------------------+-------------------+-----------------------------------------------------------+
+| Data Link        | Data Link Layer   |                                                           |
+|                  |                   |  [ Ethernet ]   [ Token Ring ]   [ Frame Relay ]  [ ATM ] |
+| Physical         | Physical Layer    |                                                           |
++------------------+-------------------+-----------------------------------------------------------+
+
+----------------------------------------------------------------------------------------------------
+🛠️ DETAILED BREAKDOWN OF PROTOCOLS BY LAYER (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. APPLICATION LAYER PROTOCOLS (User Facing & High-Level Services):
+   - Telnet (Teletype Network): Remote terminal login ke liye text-based access setup karta hai.
+   - FTP (File Transfer Protocol): Network par files ko send aur receive karne ke liye.
+   - SMTP (Simple Mail Transfer Protocol): Electronic Emails (emails) bhejne ke liye standard.
+   - DNS (Domain Name System): Domain names (e.g., google.com) ko IP Addresses mein convert karta hai.
+   - RIP (Routing Information Protocol): Routers ke beech best routing path decide karne ka protocol.
+   - SNMP (Simple Network Management Protocol): Network devices ko monitor aur manage karne ke liye.
+
+2. TRANSPORT LAYER PROTOCOLS (Process-to-Process Delivery):
+   - TCP (Transmission Control Protocol): 
+     * Connection-Oriented protocol (Reliable, handshaking, error checking, retransmission).
+   - UDP (User Datagram Protocol): 
+     * Connection-Less protocol (Super fast, low latency, no delivery guarantee - useful for streaming).
+
+3. NETWORK / INTERNET LAYER PROTOCOLS (Logical Addressing & Routing):
+   - IP (Internet Protocol): Main protocol jo packets par Source & Destination IP address lagata hai (IPv4/IPv6).
+   - ARP (Address Resolution Protocol): IP Address se Hardware MAC Address find karta hai.
+   - ICMP (Internet Control Message Protocol): Error reporting aur diagnostic messages handle karta hai (e.g., Ping command).
+   - IGMP (Internet Group Management Protocol): IP Multicasting (group transmission) ko manage karta hai.
+
+4. DATA LINK & PHYSICAL LAYER STANDARDS (Hardware & Media Access):
+   - Ethernet: Wired LAN connection ka sabse widely used standard (IEEE 802.3).
+   - Token Ring: Legacy local area network technology jisme token passing mechanism use hota tha.
+   - Frame Relay: High-speed WAN connection standard jo digital packet switching use karta hai.
+   - ATM (Asynchronous Transfer Mode): Cell-based network technology jo voice, video, aur data fast transmission karti hai.
+
+====================================================================================================
+=== END OF PROTOCOL STACK MASTER NOTES ===
+====================================================================================================
