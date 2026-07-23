@@ -12,3 +12,9 @@ Each layer deals with a particular aspect of network communicatioin.
 -A communicatioin architecture, therefore,define a standard for the communicating hosts.
 -A programmer format data in a manner defined by the communicatioin architecture and passes it on to the communicatioin software.
 -Separating communication function adds flexibility, for example, we do not need to modify the entire host software to include more communicatioin devices.
+
+::THE OSI REFERENCE MODEL::
+-The OSI model is now considered the primary Architectural model for inter-computer communications.
+-The OSI model describes how information or data makes its away from application programmes (such as spreadsheets)through a network medium (such as wire) to another application programme located on another network.
+-The OSI Reference model divides the problem of moving information between computer over a network medium into SEVEN smaller and more manageable problem.
+-this separation into smaller more manageabel function is known as layering.
