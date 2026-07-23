@@ -58,3 +58,54 @@ TCP/IP Protocols (Protocol Suite) ka complete breakdown.
 === END OF PROTOCOL STACK MASTER NOTES ===
 ====================================================================================================
 
+====================================================================================================
+🌐 THE INTERNET PROTOCOL (IP) - CORE CONCEPTS & WORKING
+====================================================================================================
+Description: Network Layer ka sabse foundational protocol - Internet Protocol (IP), Packet Routing, 
+aur Host Identification / Logical Addressing ka complete breakdown.
+
+----------------------------------------------------------------------------------------------------
+📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. PACKET-BASED DATA TRANSFER:
+   - "Data is transferred in the form of packets via logical network paths in an ordered 
+     format controlled by the network layer."
+   - 💡 Explanation: Network Layer par bada data chhote-chhote **Packets** (Datagrams) mein 
+     divide hota hai. Har packet ke sath Source IP aur Destination IP attached hota hai taaki 
+     woh network par route ho sake.
+
+2. ROUTING & PATH DETERMINATION:
+   - "It does this by forwarding packets to network routers, which rely on algorithms to 
+     determine the best paths for the data to travel. These paths are known as virtual circuits."
+   - 💡 Explanation: Packets routers ke zariye aage pass hote hain. Routers Routing Algorithms 
+     (jaise OSPF, BGP) ka use karke sabse best/shortest path chunne ka kaam karte hain.
+   - 📌 Note for Exams/Interviews: Pure IP networks *Datagram-switching* follow karte hain 
+     (jahan har packet independent path le sakta hai). Virtual Circuit concept connection-oriented 
+     networks (jaise ATM / Frame Relay ya MPLS) mein use hota hai.
+
+3. LOGICAL IDENTIFICATION (IP ADDRESSING):
+   - "The Internet Protocol (IP) is the method or protocol by which data is sent from one 
+     computer to another on the Internet. Each computer (known as a host) on the Internet 
+     has at least one IP address that uniquely identifies it from all other computers on the Internet."
+   - 💡 Explanation: IP Protocol internet par ek computer se doosre computer tak data bhejne ka 
+     rule set hai. Internet se jude har system (Host) ko ek unique ID milti hai jise **IP Address** 
+     kehte hain (e.g., IPv4: 192.168.1.1 ya IPv6).
+
+----------------------------------------------------------------------------------------------------
+📊 KEY CHARACTERISTICS OF INTERNET PROTOCOL (IP) FOR REVISION
+----------------------------------------------------------------------------------------------------
+
++-----------------------+-------------------------------------------------------------------+
+| Feature               | Description                                                       |
++-----------------------+-------------------------------------------------------------------+
+| Layer                 | Network Layer (Layer 3 in OSI / Modern TCP/IP)                    |
+| Service Type          | Connectionless & Best-Effort Delivery                             |
+| Packet Format         | IP Datagram (Header + Payload)                                    |
+| Addressing            | Logical Addressing (IPv4 = 32-bit, IPv6 = 128-bit)               |
+| Reliability           | Unreliable (Does not guarantee delivery; TCP handles reliability) |
++-----------------------+-------------------------------------------------------------------+
+
+====================================================================================================
+=== END OF INTERNET PROTOCOL (IP) NOTES ===
+====================================================================================================
