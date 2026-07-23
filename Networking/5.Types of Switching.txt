@@ -8,3 +8,4 @@ The other solution could be to have a central device and connect every device to
 Here each message is treated as an independent unit and include its own destination source address by its own. Each complete message is then transmitted from one device to another through inter network.
 
 Each intermediate device receive the message and store it until the next device is ready to receive it. For this reason a message switching network is sometimes called as Store and Forward Switching.
+
