@@ -18,3 +18,11 @@ Each layer deals with a particular aspect of network communicatioin.
 -The OSI model describes how information or data makes its away from application programmes (such as spreadsheets)through a network medium (such as wire) to another application programme located on another network.
 -The OSI Reference model divides the problem of moving information between computer over a network medium into SEVEN smaller and more manageable problem.
 -this separation into smaller more manageabel function is known as layering.
+
+-7-Application -> Network processes to Application
+-6-Presentation -> Data Representation
+-5-Session-> Interhost Communication
+-4-transport->End-to-End connection
+-3-Network->Address and best path
+-2-Data Link->Access to media
+-1-Physical->Binary Transmission
