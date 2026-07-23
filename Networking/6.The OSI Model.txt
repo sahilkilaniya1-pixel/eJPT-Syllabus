@@ -53,3 +53,6 @@ Each layer deals with a particular aspect of network communicatioin.
 -Reassembles chunks into their original sequence at the receiving end.
 -Provides acknowledgements successfull Transmission and requests
 -The transport layer is responsible for the delivery of a message from one process to another.
+
+::Layer 3: Network Layer
+
