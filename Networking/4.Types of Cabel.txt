@@ -2,3 +2,6 @@ Transmission Media::
 Guided -> Twisted-pair cable , coaxial Cabel, Fiber-Optic Cabel
 
 Unguided -> Radio Waves, Microwaves, Infrared
+
+
+::Twisted pair Cabel- Pairs of wires (the forward and return conductors of a single circuit) are twisted together for the purposes of canceling out electromagnetic interference (EMI) from other wire pairs and from external sources.
