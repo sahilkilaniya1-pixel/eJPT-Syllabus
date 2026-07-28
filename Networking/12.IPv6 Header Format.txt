@@ -88,4 +88,8 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 2. TRAFFIC CLASS (8 Bits):
    - Slide Text:
-   
+   - 💡 Hinglish Explanation:
+     * Size: **8 bits** ka field hota hai.
+     * Purpose: Packet ki priority/class set karta hai (Bilkul IPv4 ke 'Type of Service / ToS' field ki tarah).
+     * Router Handling: Network routers ko batata hai ki kaun sa traffic pehle process karna hai (e.g., Real-time voice/video vs normal web browsing).
+     * 🚨 CONGESTION RULE (Exam Imp): Network par traaffic congestion (jaam) hone par routers sabse **kam priority wale packets (least priority)** ko sabse pehle discard/drop kar dete hain!
