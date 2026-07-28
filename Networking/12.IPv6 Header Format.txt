@@ -91,3 +91,11 @@ aur sabhi fields ka detailed Hinglish explanation.
      * Purpose: Packet ki priority/class set karta hai (Bilkul IPv4 ke 'Type of Service / ToS' field ki tarah).
      * Router Handling: Network routers ko batata hai ki kaun sa traffic pehle process karna hai (e.g., Real-time voice/video vs normal web browsing).
      * CONGESTION RULE (Exam Imp): Network par traaffic congestion (jaam) hone par routers sabse **kam priority wale packets (least priority)** ko sabse pehle discard/drop kar dete hain!
+
+3. FLOW LABEL (20 Bits):
+   - Slide Text:
+   - Hinglish Explanation:
+     * Size: **20 bits** ka field hota hai.
+     * Purpose: Source host iska use ek hi communication stream/flow (jaise continuous video stream) ke saare packets ko same unique tag label dene ke liye karta hai.
+     * Re-ordering Prevention: Is label se routers ko pata rehta hai ki yeh ek hi flow ka part hain, jisse packets alag-alag paths se bhatak kar **out-of-order (aage-piche) deliver nahi hote**.
+     * Special Handling: Intermediate routers ko batata hai ki in packets ko special treatment (Non-default QoS ya Real-time streaming preference) di jaye.
