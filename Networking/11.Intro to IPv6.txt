@@ -73,3 +73,11 @@ BINARY EXPANSION (16 bits per hextet):
 === END OF IPv6 ADDRESS & COMPRESSION NOTES ===
 ====================================================================================================
 
+->Unicast Address: Unicast Address identifies  a single network interface. A packet sent to unicast address is delivered to the interface identified by that address.
+
+-> Multicast Address: Multicast address is used by Multiple hosts, called as Group , acquires a Multicast destination address. if any packet is sent to this multicast address, it will be destinated to all interface corresponding to that multicast address.
+
+-> anycast Address: Anycast address is assigned to a group of interface. any packet sent to anycast address will be delivered to only one member interface (mostly nearest host possible). Updates routing tables.
+
+NOTE:: Broadcast is not defined in IPv6.
+
