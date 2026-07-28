@@ -80,8 +80,6 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 1. VERSION (4 Bits):
    - Slide Text:
-     * "4 bits"
-     * "Indicates version of Internet Protocol which contains bit sequence 0110."
    - 💡 Hinglish Explanation:
      * Size: **4 bits** ka field hota hai.
      * Function: IP Version determine karta hai. IPv6 header ke liye iski value binary bit sequence **`0110`** (Dec: 6) hoti hai.
