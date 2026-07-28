@@ -86,3 +86,6 @@ aur sabhi fields ka detailed Hinglish explanation.
      * Size: **4 bits** ka field hota hai.
      * Function: IP Version determine karta hai. IPv6 header ke liye iski value binary bit sequence **`0110`** (Dec: 6) hoti hai.
 
+2. TRAFFIC CLASS (8 Bits):
+   - Slide Text:
+   
