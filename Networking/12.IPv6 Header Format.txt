@@ -99,3 +99,14 @@ aur sabhi fields ka detailed Hinglish explanation.
      * Purpose: Source host iska use ek hi communication stream/flow (jaise continuous video stream) ke saare packets ko same unique tag label dene ke liye karta hai.
      * Re-ordering Prevention: Is label se routers ko pata rehta hai ki yeh ek hi flow ka part hain, jisse packets alag-alag paths se bhatak kar **out-of-order (aage-piche) deliver nahi hote**.
      * Special Handling: Intermediate routers ko batata hai ki in packets ko special treatment (Non-default QoS ya Real-time streaming preference) di jaye.
+
+4. PAYLOAD LENGTH (16 Bits):
+   - Slide Text:
+   - Hinglish Explanation:
+     * Size: **16 bits** ka field hota hai.
+     * Formula: 
+       $$\text{Payload Length} = \text{Data Size} + \text{Extension Headers Size}$$
+       *(Note: IPv4 ki tarah isme Base Header ka 40 Bytes add NAHI hota, sirf base header ke aage ka data include hota hai).*
+     * JUMBO PAYLOAD RULE (Exam Special):
+       - Standard 16-bit field ki max value $2^{16} - 1 = 65,535\text{ bytes}$ hoti hai.
+       - Agar payload ka size **65,535 bytes se bada** ho jaye, toh IPv6 **Jumbo Payload Option (Jumbogram)** Extension Header ka use karta hai!
