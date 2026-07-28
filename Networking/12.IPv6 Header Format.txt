@@ -80,14 +80,14 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 1. VERSION (4 Bits):
    - Slide Text:
-   - 💡 Hinglish Explanation:
+   - Hinglish Explanation:
      * Size: **4 bits** ka field hota hai.
      * Function: IP Version determine karta hai. IPv6 header ke liye iski value binary bit sequence **`0110`** (Dec: 6) hoti hai.
 
 2. TRAFFIC CLASS (8 Bits):
    - Slide Text:
-   - 💡 Hinglish Explanation:
+   - Hinglish Explanation:
      * Size: **8 bits** ka field hota hai.
      * Purpose: Packet ki priority/class set karta hai (Bilkul IPv4 ke 'Type of Service / ToS' field ki tarah).
      * Router Handling: Network routers ko batata hai ki kaun sa traffic pehle process karna hai (e.g., Real-time voice/video vs normal web browsing).
-     * 🚨 CONGESTION RULE (Exam Imp): Network par traaffic congestion (jaam) hone par routers sabse **kam priority wale packets (least priority)** ko sabse pehle discard/drop kar dete hain!
+     * CONGESTION RULE (Exam Imp): Network par traaffic congestion (jaam) hone par routers sabse **kam priority wale packets (least priority)** ko sabse pehle discard/drop kar dete hain!
