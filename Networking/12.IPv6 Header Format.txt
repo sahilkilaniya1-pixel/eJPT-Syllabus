@@ -141,4 +141,5 @@ aur sabhi fields ka detailed Hinglish explanation.
 8. Destination address (16 bytes):
    * 16 bytes
    * IPv6 address of the final Destination(in most cases)
-   *
+   * next router interface if routing extension header is present.
+
