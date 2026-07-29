@@ -133,3 +133,6 @@ aur sabhi fields ka detailed Hinglish explanation.
      * IPv4 Equivalent: Yeh IPv4 ke **TTL (Time To Live)** field ke bilkul barabar (analogous) hota hai.
      * Lifetime Control: Iska main kaam yeh decide karna hai ki packet network par maximum kitne intermediate routers (nodes/hops) cross kar sakta hai.
      * Working Mechanism: Jab bhi packet kisi router se guzarta hai, Hop Limit ki value **1 se kam (decrement by 1)** ho jaati hai. Agar Hop Limit `0` ho jaye, toh router packet ko drop kar deta hai aur sender ko ICMPv6 "Time Exceeded" error bhej deta hai (taaki infinite routing loops na banein).
+
+7. Source address (16 bytes):
+   
