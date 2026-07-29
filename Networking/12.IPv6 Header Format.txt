@@ -135,4 +135,10 @@ aur sabhi fields ka detailed Hinglish explanation.
      * Working Mechanism: Jab bhi packet kisi router se guzarta hai, Hop Limit ki value **1 se kam (decrement by 1)** ho jaati hai. Agar Hop Limit `0` ho jaye, toh router packet ko drop kar deta hai aur sender ko ICMPv6 "Time Exceeded" error bhej deta hai (taaki infinite routing loops na banein).
 
 7. Source address (16 bytes):
-   
+   * 16 bytes
+   * source Address is 128-bits IPv6 address of the original source of the packet
+
+8. Destination address (16 bytes):
+   * 16 bytes
+   * IPv6 address of the final Destination(in most cases)
+   *
