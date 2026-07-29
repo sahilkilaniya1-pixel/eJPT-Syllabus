@@ -143,3 +143,25 @@ aur sabhi fields ka detailed Hinglish explanation.
    * IPv6 address of the final Destination(in most cases)
    * next router interface if routing extension header is present.
 
+9. WHY EXTENSION HEADERS WERE INTRODUCED?
+   - Slide Text:
+     * "to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6."
+   - 💡 Hinglish Explanation:
+     * **IPv4 Problem:** IPv4 ke Base Header mein Options field hone ki wajah se header ka size fix nahi rehta tha (20 se 60 Bytes tak vary karta tha), jisse intermediate routers ko processing mein bohot time lagta tha.
+     * **IPv6 Solution:** IPv6 ne Base Header ko **fixed 40 Bytes** ka bana diya. Extra features/options ko alag se **Extension Headers** ke roop mein add kar diya gaya hai, taaki routers normal packets ko ultra-fast speed se process kar sakein.
+
+10. CHAINING MECHANISM (NEXT HEADER FIELD):
+   - Slide Text:
+     * "Next Header field of IPv6 fixed header points to the first Extension Header and this first extension header points to the second extension header and so on."
+   - 💡 Hinglish Explanation:
+     * **Linked List Concept:** Extension Headers bilkul ek Data Structure ki **Linked List** ki tarah kaam karte hain.
+     * **Working:**
+       1. Base IPv6 Header ka `Next Header` field pehle Extension Header (`Extension Header 1`) ki taraf point karta hai.
+       2. Pehle Extension Header ka `Next Header` field doosre Extension Header (`Extension Header 2`) ki taraf point karta hai.
+       3. Aakhri Extension Header ka `Next Header` field actual payload data (**TCP/UDP / Upper Layer Data**) ki taraf point karta hai.
+
++-------------------+     +---------------------+     +---------------------+           +------------------+
+|    IPv6 Header    | ──> | Extension Header 1  | ──> | Extension Header 2  | ──> ... ──> | Upper Layer Data |
+|                   |     |                     |     |                     |           |    (TCP/UDP)     |
+| [Next Header: Ext1|     | [Next Header: Ext2] |     | [Next Header: ExtN] |           |                  |
++-------------------+     +---------------------+     +---------------------+           +------------------+
