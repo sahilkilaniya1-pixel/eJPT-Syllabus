@@ -94,3 +94,11 @@ Description: Fragmentation rules, Flow Label, Header Checksum removal, Transmiss
    - IPv4: **Variable Size** hota hai (**20 Bytes se 60 Bytes** tak, options field ki wajah se).
    - IPv6: **FIXED Size** hota hai (**40 Bytes**). Fixed size hone ki wajah se routers packet headers ko super-fast hardware pipelines se process karte hain.
 
+# IPv4 vs IPv6 Comparison
+
+| Basis of Comparison | IPv4 | IPv6 |
+| :--- | :--- | :--- |
+| **Mapping** | MAC address se mapping ke liye **ARP** *(Address Resolution Protocol)* ka use karta hai. | MAC address se mapping ke liye **NDP** *(Neighbour Discovery Protocol)* ka use karta hai. |
+| **Compatibility with Mobile Devices** | Isme **dot-decimal notation** use hota hai, isiliye yeh mobile networks ke liye utna suitable nahi hai. | Isme **hexadecimal, colon-separated notation** use hota hai, jo mobile networks ke liye zyada better hai. |
+| **IP to MAC Resolution** | Resolution ke liye **Broadcast ARP** ka use hota hai. | Resolution ke liye **Multicast Neighbour Solicitation** ka use hota hai. |
+| **Best Feature** | **NAT devices** ka use hota hai, jisse ek single IP hazaron non-routable addresses ko mask kar sakta hai. | **Vast address space** hone ki wajah se yeh direct addressing allow karta hai. |
