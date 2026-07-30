@@ -259,3 +259,61 @@ EXAMPLE 2: IPv6 Packet with Routing Extension Header
 -> Any extension header can appear at most once except Destination
 -> If Destination header is present before routing header then it will be examined by all intermediate nodes specified in routing header.
 -> if Destination header is present just above upper layer then it will be examined only by Destination node.
+
+====================================================================================================
+📦 IPv6 EXTENSION HEADERS - FUNCTIONS & WORKING EXPLANATION
+====================================================================================================
+Description: Sabhi Extension Headers ke individual functions, router vs destination processing, 
+aur encryption/security capabilities ka detailed Hinglish breakdown.
+
+----------------------------------------------------------------------------------------------------
+📑 SLIDE HEADING
+----------------------------------------------------------------------------------------------------
+
+"Given order in which all extension header should be chained in IPv6 packet 
+and working of each extension header :"
+
+----------------------------------------------------------------------------------------------------
+📊 EXTENSION HEADERS & WORKING FUNCTIONS TABLE
+----------------------------------------------------------------------------------------------------
+
++--------------------------------------------+---------------------------------------------------------------+
+| Ext. Header                                | Description                                                   |
++--------------------------------------------+---------------------------------------------------------------+
+| Hop-by-Hop Options                         | Examined by all devices on the path                           |
+| Destination Options (with routing options) | Examined by destination of the packet                         |
+| Routing Header                             | Methods to take routing decision                              |
+| Fragment Header                            | Contains parameters of fragmented datagram done by source     |
+| Authentication Header                      | verify authenticity                                           |
+| Encapsulating Security Payload             | Carries Encrypted data                                        |
++--------------------------------------------+---------------------------------------------------------------+
+
+----------------------------------------------------------------------------------------------------
+💡 DETAILED BREAKDOWN OF EACH HEADER (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. HOP-BY-HOP OPTIONS:
+   - Slide Text: "Examined by all devices on the path"
+   - 💡 Explanation: Path mein aane wale **har ek intermediate router/device** dwara yeh header read aur process kiya jata hai (Jaise Jumbo Payload Option).
+
+2. DESTINATION OPTIONS (With Routing Options):
+   - Slide Text: "Examined by destination of the packet"
+   - 💡 Explanation: Yeh information sirf **final destination device** dwara process ki jaati hai (ya routing header mein specified intermediate destinations dwara).
+
+3. ROUTING HEADER:
+   - Slide Text: "Methods to take routing decision"
+   - 💡 Explanation: Source host routers ko specific list of nodes/routers batata hai jinse ho kar packet ko destination tak jana hai (Strict/Loose Source Routing).
+
+4. FRAGMENT HEADER:
+   - Slide Text: "Contains parameters of fragmented datagram done by source"
+   - 💡 Explanation: 
+     * IPv6 mein fragmentation **sirf Source Host** karta hai (routers fragmentation nahi karte!).
+     * Is header mein fragment offset aur identification fields hote hain taaki destination par fragments wapas assemble ho sakein.
+
+5. AUTHENTICATION HEADER (AH):
+   - Slide Text: "verify authenticity"
+   - 💡 Explanation: IPSec ka part hai. Yeh ensure karta hai ki packet trustworthy source se aaya hai (Data Integrity & Origin Authentication) aur raste mein kisi ne data tamper (chhed-chhad) nahi kiya.
+
+6. ENCAPSULATING SECURITY PAYLOAD (ESP):
+   - Slide Text: "Carries Encrypted data"
+   - 💡 Explanation: Yeh bhi IPSec ka part hai. Yeh actual payload/data ko **Encrypt** karta hai taaki transmission ke waqt koi data leak na ho (Confidentiality).
