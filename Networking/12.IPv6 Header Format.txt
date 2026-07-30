@@ -195,4 +195,5 @@ aur sabhi fields ka detailed Hinglish explanation.
 9-Mobility Header - 135
  - No net header - 59
 Upper Layer -TCP - 6
-U
+Upper Layer -UDP - 17
+Upper Layer -ICMPv6 - 58
