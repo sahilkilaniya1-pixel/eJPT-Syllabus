@@ -79,12 +79,10 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 
 1. VERSION (4 Bits):
-   - Slide Text:
-   - Hinglish Explanation:
      * Size: **4 bits** ka field hota hai.
      * Function: IP Version determine karta hai. IPv6 header ke liye iski value binary bit sequence **`0110`** (Dec: 6) hoti hai.
 
-2. TRAFFIC CLASS (8 Bits):
+2. TRAFFIC CLASS (8 Bits)
    - Slide Text:
    - Hinglish Explanation:
      * Size: **8 bits** ka field hota hai.
@@ -93,16 +91,12 @@ aur sabhi fields ka detailed Hinglish explanation.
      * CONGESTION RULE (Exam Imp): Network par traaffic congestion (jaam) hone par routers sabse **kam priority wale packets (least priority)** ko sabse pehle discard/drop kar dete hain!
 
 3. FLOW LABEL (20 Bits):
-   - Slide Text:
-   - Hinglish Explanation:
      * Size: **20 bits** ka field hota hai.
      * Purpose: Source host iska use ek hi communication stream/flow (jaise continuous video stream) ke saare packets ko same unique tag label dene ke liye karta hai.
      * Re-ordering Prevention: Is label se routers ko pata rehta hai ki yeh ek hi flow ka part hain, jisse packets alag-alag paths se bhatak kar **out-of-order (aage-piche) deliver nahi hote**.
      * Special Handling: Intermediate routers ko batata hai ki in packets ko special treatment (Non-default QoS ya Real-time streaming preference) di jaye.
 
 4. PAYLOAD LENGTH (16 Bits):
-   - Slide Text:
-   - Hinglish Explanation:
      * Size: **16 bits** ka field hota hai.
      * Formula: 
        $$\text{Payload Length} = \text{Data Size} + \text{Extension Headers Size}$$
@@ -113,22 +107,12 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 
 5. NEXT HEADER (8 Bits):
-   - Slide Text:
-     * "8 bits"
-     * "indicates type of extension header (if present) immediately following the IPv6 header"
-     * "In some cases indicates the protocols contained within upper-layer packet, such as TCP, UDP."
-   - 💡 Hinglish Explanation:
      * Size: **8 bits** ka field hota hai.
      * Dual Role (Do Kaam):
        1. Extension Header Pointer: Batata hai ki Base IPv6 Header ke immediately baad kaun sa **Extension Header** (jaise Routing, Hop-by-Hop, Fragment) laga hua hai.
        2. Protocol Identifier: Agar koi extension header nahi hai, toh yeh IPv4 ke 'Protocol' field ki tarah kaam karta hai aur batata hai ki Upper-Layer Payload mein kaun sa protocol (**TCP = 6**, **UDP = 17**) packed hai.
 
 6. HOP LIMIT (8 Bits):
-   - Slide Text:
-     * "8-bit"
-     * "Analogous to TTL"
-     * "indicates the maximum number of intermediate nodes IPv6 packet is allowed to travel."
-   - 💡 Hinglish Explanation:
      * Size: **8 bits** ka field hota hai.
      * IPv4 Equivalent: Yeh IPv4 ke **TTL (Time To Live)** field ke bilkul barabar (analogous) hota hai.
      * Lifetime Control: Iska main kaam yeh decide karna hai ki packet network par maximum kitne intermediate routers (nodes/hops) cross kar sakta hai.
