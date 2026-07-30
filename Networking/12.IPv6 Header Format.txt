@@ -258,3 +258,4 @@ EXAMPLE 2: IPv6 Packet with Routing Extension Header
 ::Conventions:
 -> Any extension header can appear at most once except Destination
 -> If Destination header is present before routing header then it will be examined by all intermediate nodes specified in routing header.
+-> if Destination header is present just above upper layer then it will be examined only by Destination node.
