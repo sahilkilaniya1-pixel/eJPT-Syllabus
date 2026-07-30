@@ -194,4 +194,5 @@ aur sabhi fields ka detailed Hinglish explanation.
 8- Destination Ooptions - 60
 9-Mobility Header - 135
  - No net header - 59
-Upper Layer
+Upper Layer -TCP - 6
+U
