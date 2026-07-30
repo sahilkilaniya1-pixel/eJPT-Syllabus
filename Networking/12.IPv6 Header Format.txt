@@ -169,7 +169,6 @@ aur sabhi fields ka detailed Hinglish explanation.
 1. WHY EXTENSION HEADERS WERE INTRODUCED?
    - Slide Text:
      * "to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6."
-   - 💡 Hinglish Explanation:
      * IPv4 Problem: IPv4 ke Base Header mein Options field ki wajah se header ka size fix nahi hota tha (20 se 60 Bytes tak badhta tha), jisse intermediate routers ko processing mein time lagta tha.
      * IPv6 Solution: IPv6 ne Base Header ko **fixed 40 Bytes** ka rakha aur baaki optional features ko alag se **Extension Headers** ke roop mein add kiya, jisse routers fast process kar sakein.
 
