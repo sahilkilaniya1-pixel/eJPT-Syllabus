@@ -180,3 +180,6 @@ aur sabhi fields ka detailed Hinglish explanation.
        1. Base IPv6 Header ka `Next Header` field pehle Extension Header (`Extension Header 1`) ko point karta hai.
        2. Pehle Extension Header ka `Next Header` field doosre Extension Header (`Extension Header 2`) ko point karta hai.
        3. Yeh chain chalti rehti hai jab tak aakhri Extension Header ka `Next Header` field actual payload data (**Upper Layer Data / TCP/UDP**) ko point na kar de.
+
+
+:: IPv6 packet may contain zero, one or more extension headers but these should be present in their recommended order:
