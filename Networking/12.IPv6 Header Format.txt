@@ -182,18 +182,78 @@ aur sabhi fields ka detailed Hinglish explanation.
        3. Yeh chain chalti rehti hai jab tak aakhri Extension Header ka `Next Header` field actual payload data (**Upper Layer Data / TCP/UDP**) ko point na kar de.
 
 
-:: IPv6 packet may contain zero, one or more extension headers but these should be present in their recommended order:
+====================================================================================================
+📦 IPv6 EXTENSION HEADERS RECOMMENDED ORDER & PROTOCOL CODES
+====================================================================================================
+Description: IPv6 Extension Headers ka fixed sequence order, Next Header Codes (Protocol numbers), 
+aur practical packet encapsulation examples ka complete Hinglish breakdown.
 
-1-Basic IPv6 -
-2-Hop-by-Hop Options-0
-3-Destination Ooptions(with Routing options)-60
-4-Routing Header - 43
-5-Fragment header-44
-6-Authentication Header- 51
-7-Encapsulation Security Payload Header - 50
-8- Destination Ooptions - 60
-9-Mobility Header - 135
- - No net header - 59
-Upper Layer -TCP - 6
-Upper Layer -UDP - 17
-Upper Layer -ICMPv6 - 58
+----------------------------------------------------------------------------------------------------
+📑 SLIDE HEADING & CORE RULE
+----------------------------------------------------------------------------------------------------
+
+"IPv6 packet may contain zero, one or more extension headers but these should be present in 
+their recommended order:"
+
+- 💡 Hinglish Rule: IPv6 packet mein 0, 1 ya multiple extension headers ho sakte hain, lekin unka 
+  sequence hamesha niche diye gaye standard **Recommended Order** mein hi hona chahiye.
+
+----------------------------------------------------------------------------------------------------
+📊 EXTENSION HEADERS ORDER & NEXT HEADER CODES TABLE
+----------------------------------------------------------------------------------------------------
+
++-------+-------------------------------------------------+------------------+
+| Order | Header Type                                     | Next Header Code |
++-------+-------------------------------------------------+------------------+
+|   1   | Basic IPv6 Header                               |        -         |
+|   2   | Hop-by-Hop Options                              |        0         |
+|   3   | Destination Options (with Routing Options)      |       60         |
+|   4   | Routing Header                                  |       43         |
+|   5   | Fragment Header                                 |       44         |
+|   6   | Authentication Header                           |       51         |
+|   7   | Encapsulation Security Payload Header (ESP)     |       50         |
+|   8   | Destination Options                             |       60         |
+|   9   | Mobility Header                                 |      135         |
+|   -   | No Next Header                                  |       59         |
++-------+-------------------------------------------------+------------------+
+| Upper | TCP                                             |        6         |
+| Upper | UDP                                             |       17         |
+| Upper | ICMPv6                                          |       58         |
++-------+-------------------------------------------------+------------------+
+
+----------------------------------------------------------------------------------------------------
+🎨 PACKET ENCAPSULATION EXAMPLES
+----------------------------------------------------------------------------------------------------
+
+EXAMPLE 1: TCP is used in IPv6 packet (No Extension Header)
+-----------------------------------------------------------
+[ Basic IPv6 Header ] ──> [ TCP Header ] ──> [ TCP Data ]
+  (Next Header = 6)
+
+- 💡 Explanation: Yahan koi extension header nahi hai. Base IPv6 Header ka `Next Header` 
+  field direct TCP Protocol Code `6` ko point kar raha hai.
+
+
+EXAMPLE 2: IPv6 Packet with Routing Extension Header
+----------------------------------------------------
+[ Basic IPv6 Header ] ──> [ Routing Extension Header ] ──> [ TCP Header ] ──> [ TCP Data ]
+  (Next Header = 43)           (Next Header = 6)
+
+- 💡 Explanation: 
+  1. Base IPv6 Header ka `Next Header = 43` hai, jo batata hai ki agla header **Routing Extension Header** hai.
+  2. Routing Extension Header ka `Next Header = 6` hai, jo aage **TCP Header** ko point kar raha hai.
+
+----------------------------------------------------------------------------------------------------
+💡 KEY EXAM TAKEAWAYS (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. Hop-by-Hop Options (Code 0): Agar yeh present hai, toh yeh hamesha Base IPv6 Header ke **turant baad (Order 2)** hi aana chahiye.
+2. Code 59 (No Next Header): Yeh batata hai ki is header ke baad koi bhi aage header ya payload data nahi hai.
+3. Common Upper Layer Codes (Direct Questions):
+   - **TCP = 6**
+   - **UDP = 17**
+   - **ICMPv6 = 58**
+
+====================================================================================================
+=== END OF EXTENSION HEADERS ORDER NOTES ===
+====================================================================================================
