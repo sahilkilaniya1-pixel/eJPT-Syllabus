@@ -191,3 +191,7 @@ aur sabhi fields ka detailed Hinglish explanation.
 5-Fragment header-44
 6-Authentication Header- 51
 7-Encapsulation Security Payload Header - 50
+8- Destination Ooptions - 60
+9-Mobility Header - 135
+ - No net header - 59
+Upper Layer
