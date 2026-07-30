@@ -176,7 +176,6 @@ aur sabhi fields ka detailed Hinglish explanation.
 2. CHAINING MECHANISM (POINTER CHAIN):
    - Slide Text:
      * "Next Header field of IPv6 fixed header points to the first Extension Header and this first extension header points to the second extension header and so on."
-   - 💡 Hinglish Explanation:
      * **Pointer Chain Concept:** Yeh bilkul ek Data Structure ki **Linked List** ki tarah kaam karta hai jahan har node agle node ka address (pointer) hold karta hai.
      * **Step-by-Step Flow:**
        1. Base IPv6 Header ka `Next Header` field pehle Extension Header (`Extension Header 1`) ko point karta hai.
