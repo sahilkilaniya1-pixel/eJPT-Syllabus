@@ -152,4 +152,4 @@ aur sabhi fields ka detailed Hinglish explanation.
 
 Extension header:
 - to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6.
--Next Header field of IPv4 
+-Next Header field of IPv6 fixed header point to the first extension header and this first extension header points to the second extension header and so on.
