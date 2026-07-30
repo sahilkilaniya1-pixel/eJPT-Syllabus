@@ -185,4 +185,4 @@ aur sabhi fields ka detailed Hinglish explanation.
 :: IPv6 packet may contain zero, one or more extension headers but these should be present in their recommended order:
 
 1-Basic IPv6 -
-2-
+2-Hop-by-Hop Options-0
