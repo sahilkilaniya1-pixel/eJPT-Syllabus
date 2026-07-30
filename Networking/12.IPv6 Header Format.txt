@@ -150,3 +150,6 @@ aur sabhi fields ka detailed Hinglish explanation.
 | [Next Header: Ext1|     | [Next Header: Ext2] |     | [Next Header: ExtN] |           |                  |
 +-------------------+     +---------------------+     +---------------------+           +------------------+
 
+Extension header:
+- to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6.
+-Next Header field of IPv4 
