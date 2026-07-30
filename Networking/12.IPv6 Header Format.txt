@@ -187,4 +187,4 @@ aur sabhi fields ka detailed Hinglish explanation.
 1-Basic IPv6 -
 2-Hop-by-Hop Options-0
 3-Destination Ooptions(with Routing options)-60
-4-
+4-Routing Header - 43
