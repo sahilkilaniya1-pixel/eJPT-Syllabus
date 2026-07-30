@@ -150,6 +150,35 @@ aur sabhi fields ka detailed Hinglish explanation.
 | [Next Header: Ext1|     | [Next Header: Ext2] |     | [Next Header: ExtN] |           |                  |
 +-------------------+     +---------------------+     +---------------------+           +------------------+
 
-Extension header:
-- to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6.
--Next Header field of IPv6 fixed header point to the first extension header and this first extension header points to the second extension header and so on.
+----------------------------------------------------------------------------------------------------
+🎨 EXTENSION HEADER CHAINING DIAGRAM (Exact Visual Representation)
+----------------------------------------------------------------------------------------------------
+
+┌────────────────┐       ┌───────────────────┐       ┌───────────────────┐       ┌───────────────────┐       ┌──────────────────┐
+│  IPv6 Header   │       │Extension Header 1 │       │Extension Header 2 │       │Extension Header n │       │ Upper Layer Data │
+│                │       │                   │       │                   │       │                   │       │    (TCP/UDP)     │
+│ [Next Header]  │       │   [Next Header]   │       │   [Next Header]   │       │   [Next Header]   │       │                  │
+└───────┬────────┘       └─────────┬─────────┘       └─────────┬─────────┘       └─────────┬─────────┘       └──────────────────┘
+        │                          │                           │                           │                          ▲
+        └─────── (points to) ──────┴──────── (points to) ──────┴──────── (points to) ──────┴──────── (points to) ─────┘
+
+----------------------------------------------------------------------------------------------------
+📄 SLIDE TEXT & DETAILED BREAKDOWN (Hinglish Notes)
+----------------------------------------------------------------------------------------------------
+
+1. WHY EXTENSION HEADERS WERE INTRODUCED?
+   - Slide Text:
+     * "to rectify the limitations of IPv4 Option Field, Extension Headers are introduced in IPv6."
+   - 💡 Hinglish Explanation:
+     * IPv4 Problem: IPv4 ke Base Header mein Options field ki wajah se header ka size fix nahi hota tha (20 se 60 Bytes tak badhta tha), jisse intermediate routers ko processing mein time lagta tha.
+     * IPv6 Solution: IPv6 ne Base Header ko **fixed 40 Bytes** ka rakha aur baaki optional features ko alag se **Extension Headers** ke roop mein add kiya, jisse routers fast process kar sakein.
+
+2. CHAINING MECHANISM (POINTER CHAIN):
+   - Slide Text:
+     * "Next Header field of IPv6 fixed header points to the first Extension Header and this first extension header points to the second extension header and so on."
+   - 💡 Hinglish Explanation:
+     * **Pointer Chain Concept:** Yeh bilkul ek Data Structure ki **Linked List** ki tarah kaam karta hai jahan har node agle node ka address (pointer) hold karta hai.
+     * **Step-by-Step Flow:**
+       1. Base IPv6 Header ka `Next Header` field pehle Extension Header (`Extension Header 1`) ko point karta hai.
+       2. Pehle Extension Header ka `Next Header` field doosre Extension Header (`Extension Header 2`) ko point karta hai.
+       3. Yeh chain chalti rehti hai jab tak aakhri Extension Header ka `Next Header` field actual payload data (**Upper Layer Data / TCP/UDP**) ko point na kar de.
