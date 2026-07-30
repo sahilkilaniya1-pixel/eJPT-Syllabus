@@ -256,4 +256,4 @@ EXAMPLE 2: IPv6 Packet with Routing Extension Header
 
 
 ::Conventions:
--> Any exte`
+-> Any extension header can appear at most once except Destination
