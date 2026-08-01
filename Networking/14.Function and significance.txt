@@ -31,4 +31,6 @@ Agar aapko normal JavaScript, C++, ya Python file ke comments mein diagram rakhn
 Function of Physical Layer:
 -> Cable and Connectors(Guided and unguided)
 -> Physical Topology (Tree, Bus, Star, Mesh)
--> hardware ()
+-> hardware (Repeater, Hub)
+-> Transmission mode (Simple, Duplex)
+-> Multiplexing (FDM, TDM)
