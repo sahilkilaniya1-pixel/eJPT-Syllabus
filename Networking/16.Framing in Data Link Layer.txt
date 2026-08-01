@@ -3,3 +3,16 @@ Framing::
 -> However, these bits must be framed into discernible blocks of information.
 -> Ethernet, token ring, frame relay, and other data link layer technologies have their own frame structures.
 
+
+### Data Link Layer Frame Structure & Services
+
+* **Upper Boundary (Layer 3 Connection):**
+  * Data Link Layer receives a **Packet** from the **Network Layer** (Layer 3).
+
+* **Frame Composition:**
+  * **Header:** Contains control information like Source/Destination MAC addresses.
+  * **Packet (Data):** The actual payload received from Layer 3.
+  * **Trailer:** Contains Error Detection/Correction codes (like CRC - Cyclic Redundancy Check).
+
+* **Lower Boundary (Layer 1 Connection):**
+  * The complete **Frame** is sent down to the **Physical Layer** (Layer 1) to be converted into raw bits/signals.
