@@ -36,18 +36,19 @@ Function of Physical Layer:
 -> Multiplexing (FDM, TDM)
 -> Encoding (Analogy, Digital)
 
-### 2. # Transmission Media
+### 2. ASCII Tree Art (Comments/Normal Text Files Ke Liye)
 
-* **Guided Media (Wired)**
-  * **Coaxial**
-    * Baseband
-    * Broadband
-  * **Fibre Optics**
-  * **Twisted Pair**
-    * Unshielded (UTP)
-    * Shielded (STP)
+Agar aapko code files (JavaScript, Python, C++) ke andar comments mein tree structure chahiye:
 
-* **Unguided Media (Wireless)**
-  * Radiowaves
-  * Microwaves
-  * Infrared
+```text
+                     Transmission media
+                             │
+            ┌────────────────┴────────────────┐
+            │                                 │
+       Guided media                     Unguided media
+    ┌───────┼───────┐               ┌─────────┼─────────┐
+ Coaxial  Fibre  Twisted        Radiowaves Microwaves Infrared
+    │     Optics    │
+ ┌──┴──┐         ┌──┴──┐
+Base- Broad-  Unshielded Shielded
+ band  band
