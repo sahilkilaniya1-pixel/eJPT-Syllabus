@@ -42,3 +42,4 @@ Function of Data Link Layer::
 ->Flow control (Sliding Window).
 ->Error control (CRC, Checksum).
 ->Access control (CSMA/CD,ALOHA,Token ring).
+->Physical Addressing (MAC).
