@@ -35,3 +35,4 @@ Function of Physical Layer:
 -> Transmission mode (Simple, Duplex)
 -> Multiplexing (FDM, TDM)
 -> Encoding (Analogy, Digital)
+
