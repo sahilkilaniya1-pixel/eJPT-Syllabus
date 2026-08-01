@@ -37,3 +37,6 @@ Aap code files ke comments mein path aur datagram structure aise darsha sakte ha
                                    Datagram: [ D3 | H3 ]
 
 
+Function of Data Link Layer::
+->Hop to Hop (node to node ) delivery.
+->Flow control (Sliding Window).
