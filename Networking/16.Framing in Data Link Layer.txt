@@ -29,3 +29,4 @@ Framing::
   ##Type of Framing::
   1.Fixed size- The frame is of fixed size and there is no need to provide Boundaries to the frame, Length of the frame itself acts as delimiter.
   ->Drawback: it suffers from internal fragmentation if data size is less than frame size.
+  ->Solution: padding.
