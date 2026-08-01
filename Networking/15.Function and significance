@@ -16,4 +16,22 @@
    * Processed as **frames** at the **Data Link Layer**
    * Forwarded as **Data to Network Layer**
 
-   
+
+   ### 2. ASCII Architecture Diagram (Code Comments Ke Liye)
+
+Aap code files ke comments mein path aur datagram structure aise darsha sakte hain:
+
+```text
+  Legend: (O) Source | (*) Destination | [D3|H3] Datagram (Data + Header)
+
+  [ HOST A ]                                                       [ HOST B ]
+  ┌──────────┐      Link 1       ┌────┐      Link 3       ┌────┐     Link 5      ┌────┐     Link 6      ┌──────────┐
+  │ Network  ├──────────────────►│ R1 ├──────────────────►│ R3 ├────────────────►│ R4 ├────────────────►│ Network  │
+  ├──────────┤                   └────┘                   └────┘                 └────┘                  ├──────────┤
+  │Data link │                                                                                           │Data link │
+  ├──────────┤                                                                                           ├──────────┤
+  │ Physical │                                                                                           │ Physical │
+  └────┬─────┘                                                                                           └────▲─────┘
+       │                                                                                                      │
+       └───────────────────────── Active Path: A ──► R1 ──► R3 ──► R4 ──► B ──────────────────────────────────┘
+                                   Datagram: [ D3 | H3 ]
