@@ -3,3 +3,29 @@
 ->Interfaces hardware with the network
 ->Deals with the mechanical and electrical specifications
 -> Converts data packets into bit streams to transfer them through the physical transmission media.
+
+
+Agar aapko normal JavaScript, C++, ya Python file ke comments mein diagram rakhna hai, toh aap is ASCII art ko use kar sakte hain:
+
+```text
+       SENDER SIDE                                RECEIVER SIDE
+  
+   From Data Link Layer                        To Data Link Layer
+            │                                           ▲
+            ▼                                           │
+ ┌──────────────────────┐                    ┌──────────────────────┐
+ │    Physical Layer    │                    │    Physical Layer    │
+ │ ┌──────────────────┐ │                    │ ┌──────────────────┐ │
+ │ │10101000000010111 │ │                    │ │10101000000010111 │ │
+ │ └──────────────────┘ │                    │ └──────────────────┘ │
+ │ ┌───┐                │                    │ ┌───┐ (Removed)      │
+ │ │110│ (Stuffed Bits) │                    │ │110░│               │
+ │ └───┘                │                    │ └───┘                │
+ └──────────┬───────────┘                    └──────────▲───────────┘
+            │                                           │
+            └──────────────► Transmission ──────────────┘
+                                Medium
+                             (Signals ~~~)
+
+
+Function
