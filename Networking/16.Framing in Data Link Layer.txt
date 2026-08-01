@@ -30,3 +30,5 @@ Framing::
   1.Fixed size- The frame is of fixed size and there is no need to provide Boundaries to the frame, Length of the frame itself acts as delimiter.
   ->Drawback: it suffers from internal fragmentation if data size is less than frame size.
   ->Solution: padding.
+
+  2.Variable size- In this there is need to define end of frame as well as beginning of next frame to distinguish. This can be done in two ways:
