@@ -1,3 +1,4 @@
 2.Data Link Layer::
 ->Data link layer works between two hosts which are directly connected in some sense (same network),point to point or broadcast.
 ->Takes data from the network layer, and provides data to the physical layer.
+->provides node to node delivery.
