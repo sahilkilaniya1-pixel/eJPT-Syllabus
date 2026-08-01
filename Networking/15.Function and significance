@@ -2,3 +2,4 @@
 ->Data link layer works between two hosts which are directly connected in some sense (same network),point to point or broadcast.
 ->Takes data from the network layer, and provides data to the physical layer.
 ->provides node to node delivery.
+->At the receiving end,it picks up data from hardware as electrical signals, assembles them in a recognizable frame format , and hands over to upper layer.
