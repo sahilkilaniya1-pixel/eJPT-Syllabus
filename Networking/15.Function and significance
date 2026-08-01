@@ -3,3 +3,17 @@
 ->Takes data from the network layer, and provides data to the physical layer.
 ->provides node to node delivery.
 ->At the receiving end,it picks up data from hardware as electrical signals, assembles them in a recognizable frame format , and hands over to upper layer.
+
+### Data Link Layer Processing (Framing Flow)
+
+1. **Sender Side (Top to Bottom):**
+   * Data receives from **Network Layer**
+   * Processed into **frames** at the **Data Link Layer**
+   * Forwarded as **Data to Physical Layer**
+
+2. **Receiver Side (Bottom to Top):**
+   * Data received from **Physical Layer**
+   * Processed as **frames** at the **Data Link Layer**
+   * Forwarded as **Data to Network Layer**
+
+   
