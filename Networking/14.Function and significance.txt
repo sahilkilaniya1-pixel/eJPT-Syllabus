@@ -36,3 +36,19 @@ Function of Physical Layer:
 -> Multiplexing (FDM, TDM)
 -> Encoding (Analogy, Digital)
 
+### 2. ASCII Tree Art (Comments/Normal Text Files Ke Liye)
+
+Agar aapko code files (JavaScript, Python, C++) ke andar comments mein tree structure chahiye:
+
+```text
+                     Transmission media
+                             │
+            ┌────────────────┴────────────────┐
+            │                                 │
+       Guided media                     Unguided media
+    ┌───────┼───────┐               ┌─────────┼─────────┐
+ Coaxial  Fibre  Twisted        Radiowaves Microwaves Infrared
+    │     Optics    │
+ ┌──┴──┐         ┌──┴──┐
+Base- Broad-  Unshielded Shielded
+ band  band
