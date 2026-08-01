@@ -32,3 +32,4 @@ Framing::
   ->Solution: padding.
 
   2.Variable size- In this there is need to define end of frame as well as beginning of next frame to distinguish. This can be done in two ways:
+  ->Length field: We can introduce a length field in the frame to indicate the length of the frame. Used in Ethernet(802.3). The Problem with this is that sometimes the length filed might get corrupted.
