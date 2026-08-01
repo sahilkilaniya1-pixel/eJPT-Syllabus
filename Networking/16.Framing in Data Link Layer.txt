@@ -23,3 +23,4 @@ Framing::
   ->Detecting start if the frame: Looking out for special sequence(SFD) of bits that marks the beginning of the frame.
   ->How do station detect a frame: Every station listen to link for SDF pattern through a sequential circuit.
   ->Detecting end of frame: When to stop reading the frame.
+  
