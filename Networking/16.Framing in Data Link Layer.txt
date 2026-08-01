@@ -20,3 +20,4 @@ Framing::
 
 
   ##Problem in Framing::
+  ->Detecting start if the frame: Looking out for special sequence(SFD) of bits that marks the beginning of the frame.
