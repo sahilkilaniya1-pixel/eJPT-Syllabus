@@ -7,7 +7,7 @@
 
 Agar aapko normal JavaScript, C++, ya Python file ke comments mein diagram rakhna hai, toh aap is ASCII art ko use kar sakte hain:
 
-```text
+
        SENDER SIDE                                RECEIVER SIDE
   
    From Data Link Layer                        To Data Link Layer
