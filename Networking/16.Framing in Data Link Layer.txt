@@ -1,3 +1,4 @@
 Framing::
 ->Framing is a point-to-point connection between two computers or devices consists of a wire in which data is transmitted as a stream of bits
 -> However, these bits must be framed into discernible blocks of information.
+-> Ethernet, token ring, frame relay, and other data link layer technologies have their own frame structures.
