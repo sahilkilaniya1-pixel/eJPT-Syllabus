@@ -40,3 +40,4 @@ Aap code files ke comments mein path aur datagram structure aise darsha sakte ha
 Function of Data Link Layer::
 ->Hop to Hop (node to node ) delivery.
 ->Flow control (Sliding Window).
+->Error control (CRC, Checksum).
