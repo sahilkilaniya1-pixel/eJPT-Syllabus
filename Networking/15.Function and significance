@@ -41,3 +41,4 @@ Function of Data Link Layer::
 ->Hop to Hop (node to node ) delivery.
 ->Flow control (Sliding Window).
 ->Error control (CRC, Checksum).
+->Access control (CSMA/CD,ALOHA,Token ring).
