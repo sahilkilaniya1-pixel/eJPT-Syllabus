@@ -28,4 +28,7 @@ Agar aapko normal JavaScript, C++, ya Python file ke comments mein diagram rakhn
                              (Signals ~~~)
 
 
-Function
+Function of Physical Layer:
+-> Cable and Connectors(Guided and unguided)
+-> Physical Topology (Tree, Bus, Star, Mesh)
+-> hardware ()
