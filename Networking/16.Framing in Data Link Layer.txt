@@ -16,3 +16,7 @@ Framing::
 
 * **Lower Boundary (Layer 1 Connection):**
   * The complete **Frame** is sent down to the **Physical Layer** (Layer 1) to be converted into raw bits/signals.
+
+
+
+  ##Problem in Framing::
