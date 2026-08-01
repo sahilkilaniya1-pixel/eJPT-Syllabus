@@ -1,0 +1,2 @@
+Framing::
+->Framing is a point-to-point connection between two computers or devices consists of a wire in which data is transmitted as a stream of bits.
