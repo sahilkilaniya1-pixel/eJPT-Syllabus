@@ -1,1 +1,5 @@
-1.Physical Layer
+1.Physical Layer : 
+-> it converts logical data into physical streams
+->Interfaces hardware with the network
+->Deals with the mechanical and electrical specifications
+-> Converts data packets into bit streams to transfer them through the physical transmission media.
