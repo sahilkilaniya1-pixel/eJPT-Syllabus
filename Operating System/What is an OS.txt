@@ -31,3 +31,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 
   os kernel architecture 
   monolithic kernel saare major servies proceess file system memory device drivers ek he address spaces mein kernel mode par run hoti hain
+  fast execution low ipc overhead conse ek driver crash hone se poora system crash ho jata hain linux traditionla unix
+
+  micorkernel minimum core services  basic inter process communicaiton thread scheduling baisc memory kernel mode mein hoti hain rest services basic devices drivers file ststem user space mein run hoti hain high stablity mdular desgin const inter process communtio ipc overhead ke karan slow perforamnce 
