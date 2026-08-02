@@ -19,3 +19,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 
 
   soft rtos minor delays tolerate iye ja skte hain e.g video streaming, gaming.
+
+
+  basic consct multiple processes ko cpu par simulatineously execute karna  and ek he porcess ka andar multiple exectution threads k ochalana 
