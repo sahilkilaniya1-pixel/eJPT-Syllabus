@@ -21,3 +21,6 @@ Normal code files (Python, JS, C++) ke comments ke liye exact frame layout:
 └────────────┴───────┴─────────────────────┴────────────────┴──────────┴─────────────────┴──────────┘
 
 
+
+Ethernet Frame format::
+-> preamble:: this is a pattern of alternative 0's and 1's which indicates starting of the frame and allow sender and receiver to establish bit synchronization.
