@@ -1,9 +1,11 @@
-4. OS Kernel Architecture
-Monolithic Kernel: Saari major services (Process, File System, Memory, Device Drivers) ek hi address space
-mein Kernel mode par run hoti hain.
-Pros: Fast execution / Low IPC overhead. Cons: Ek driver crash hone se poora system crash ho jata hai (e.g.,
-Linux, Traditional Unix).
-Microkernel: Minimum core services (Basic Inter-Process Communication, Thread Scheduling, Basic Memory)
-Kernel mode mein hoti hain. Rest services (Device Drivers, File Systems) User Space mein run hoti hain.
-Pros: High stability, modular design. Cons: Inter-Process Communication (IPC) overhead ke karan slow
-performance (e.g., QNX, Mach).
+# 4. OS Kernel Architecture
+
+## Monolithic Kernel
+All major services (Process, File System, Memory, Device Drivers) run in a single address space in Kernel mode[cite: 1].
+* **Pros:** Fast execution / Low Inter-Process Communication (IPC) overhead[cite: 1].
+* **Cons:** If a single driver crashes, the entire system crashes (e.g., Linux, Traditional Unix)[cite: 1].
+
+## Microkernel
+Minimum core services (Basic IPC, Thread Scheduling, Basic Memory) reside in Kernel mode[cite: 1]. The remaining services (Device Drivers, File Systems) run in User Space[cite: 1].
+* **Pros:** High stability, modular design[cite: 1].
+* **Cons:** Slower performance due to Inter-Process Communication (IPC) overhead (e.g., QNX, Mach)[cite: 1].
