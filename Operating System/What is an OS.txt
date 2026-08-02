@@ -58,4 +58,8 @@ process control block pcb process creatinng process program in execution primary
  process state lifestyle new process launch hone wala hain ready ram mein cpu allocation ka wait kar raha hain long term schedulet swara maintaion running cpu par instruction eexcute ho rahe hain short term scheduler allocate  karta hain watitng blocked io event ya sgnal ak wait kar raha hain terminated program execution complete ho gaya suspeded states jab ram full ho jati hain tab medim term scheduler process kosecondatu idsk par swap out karke susped ready ya sustedn awit state mein daal det ahian
  context switching cpu ko ek process se doosre process par switch karen ki process ko context witch kehte hain 1. current running proces ki sate usek pcb mein save hoti hain next  process ki state uske pcb se restore load hoti hain
  overhed note contect swithing pure os overhed hain iske dauran cpu ko real work execute  nahi karta hardware register cache invalidation aur tlb flushes iski main complexily badhare hain.
- 
+
+
+ fcfs firse come first serve non peremptive jo phele aaiga phelse excute hoga  problem convoy effect agar ohele process bada ho toh chote rocesses ko lamba wait karna pdata hain jisse average wt karrab hota hian 
+ sjf srtf shortes job first shortest remainig time first sjf non preemptive hain jabki srtf preemptive version hain
+ advantage minimum avaergae waiting time pradhan karta 
