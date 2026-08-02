@@ -4,9 +4,9 @@
 
 | Metric | Formula |
 | :--- | :--- |
-| **Turnaround Time (TAT)** | $\text{TAT} = \text{Completion Time (CT)} - \text{Arrival Time (AT)}$ |
-| **Waiting Time (WT)** | $\text{WT} = \text{Turnaround Time (TAT)} - \text{Burst Time (BT)}$ |
-| **Response Time (RT)** | $\text{RT} = \text{First CPU Allocation Time} - \text{Arrival Time (AT)}$ |
+| **Turnaround Time (TAT)** Completion Time (CT) -Arrival Time (AT)
+| **Waiting Time (WT) = Turnaround Time (TAT)-Burst Time (BT)
+| **Response Time (RT) = First CPU Allocation Time -Arrival Time (AT)
 
 ---
 
