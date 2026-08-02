@@ -1,8 +1,8 @@
 # 2. Process State Lifecycle
 
-$$\text{[ New ]} \longrightarrow \text{[ Ready ]} \rightleftarrows \text{[ Running ]} \longrightarrow \text{[ Terminated ]}$$
-$$\quad \quad \quad \quad \quad \quad \uparrow \quad \quad \quad \quad \quad \ \downarrow$$
-$$\quad \quad \quad \quad \quad \quad \quad \text{[ Waiting / Blocked ]}$$
+[ New ]--->[ Ready ]--->[ Running ]--->[ Terminated ]
+                |                             |
+                | [ Waiting / Blocked ]     <--
 
 ## Process States:
 * **New:** The process is being created/launched[cite: 1].
