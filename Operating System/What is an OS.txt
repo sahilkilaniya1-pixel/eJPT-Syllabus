@@ -42,4 +42,8 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 
 
   process control fork (), exec(), exit(), wait()
+  file amanagement open(), read(), wreite *, close(),
+  device management read, write ioclt
+  information comm getpid, pipe, shmget socket,
+
   
