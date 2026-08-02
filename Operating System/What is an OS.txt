@@ -50,4 +50,4 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
   kernel loading bootloader os kernel ko disk se ram mein trasnfer karke control hadout karta haininit process kernel initialize hokar ohela process linux mein init ststemd pid -1 create krta hain 
   32 bit system maximum 232bytes 4gb ram address kar sakta hain64 bit ssystem therorictical limit 2 bytes= 16 exabytes ram tak support karta hain aur wide registers ke karan large arithmetic operations ek cycle mein perform karta hain.
 
-  
+process control block pcb process creatinng process program in execution primary memory men active executable state mein hota hain process control block os ke dwarea maintain kiya gaya ek data strucutre jo har process ki state  kie full informationq hold karta hai
