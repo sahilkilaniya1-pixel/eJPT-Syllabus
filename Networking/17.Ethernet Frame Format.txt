@@ -3,4 +3,4 @@ Ethernet at Data Link Layer::
 ->The protocol is defined by IEEE 802.3 and divides the data link layer into two sublayers:
 
     ->Logical Link Control(LLC): Sublayer and the
-    
+    ->Media Access Control(MAC):Sublayer.
