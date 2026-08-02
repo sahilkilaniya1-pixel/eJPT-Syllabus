@@ -5,3 +5,5 @@
 * **Multiprogramming OS:** Multiple processes reside in Main Memory (RAM) simultaneously. When one process waits for I/O completion, the CPU immediately switches to another process, significantly increasing CPU utilization.
 
 * **Multitasking / Time-Sharing OS:** A logical extension of multiprogramming. Fast context switching occurs based on a Time Quantum (CPU Slice) via Round-Robin scheduling, creating the illusion that multiple apps are running concurrently.
+
+* **Multiprocessing OS:** Multiple CPUs (Cores) within a single system share the same memory (Parallel execution).
