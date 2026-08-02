@@ -53,3 +53,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 process control block pcb process creatinng process program in execution primary memory men active executable state mein hota hain process control block os ke dwarea maintain kiya gaya ek data strucutre jo har process ki state  kie full informationq hold karta hai
  process sate & process is program counter agle insturcitonke memory address cpu regiter accumulator index register stack pointers cpu scheduling info prioirty quenue pointer memory management info ipage table segment table 
  io file stats open file descriptors li kist
+ fork system call ek duplicate child process bananti hain parent kochiild ka pid return hota hain jabki child ko 0 return hota hian exec sysytem current process address space ko naye binary code program se replce kar deti hain 
+
+ process state lifestyle 
