@@ -23,3 +23,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 
   basic consct multiple processes ko cpu par simulatineously execute karna  and ek he porcess ka andar multiple exectution threads k ochalana 
   resource sharing har process ki apni isolated memory sapce hoti hain and cthreas same code data aur heap space share karte hain.
+
+  context switching slower & heavyweight pcb save restore overhead and fast lightwate therasd control block overhread low hota hain.
+  
