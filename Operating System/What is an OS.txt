@@ -39,4 +39,7 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
   user space applications jab hardware access ya privileged operations maangti hain tab system calls ka upyog kiya jata hain yeh ek softare interrupt generate karti hain jo mode bit i s o switch karta hain,
 
   user-> systemcall tarp switch to kernel mode  kerranl execution resturn result.
+
+
+  process control fork (), exec(), exit(), wait()
   
