@@ -6,3 +6,5 @@ OS ek Resource Manager aur interface ki tarah kaam  karta hain jo user applicati
 
 -Dual mode operations: system security aur stability ke liye hardware do modes supports karta hai.
 ->user mode(mode bit=1): unprivilegede instuructions execute hote hain. directly hardware access allowed nhihota.
+
+kernal / privileged mode mode bit=0 cpu sari hardware level aur sensitive instructions exucute kar sakta hai.
