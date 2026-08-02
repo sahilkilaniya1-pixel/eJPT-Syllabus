@@ -1,1 +1,5 @@
-OS ek Resource Manager aur interface ki tarah kaam  karta hain jo user applications aur hardware k beech connection banata hain.
+OS ek Resource Manager aur interface ki tarah kaam  karta hain jo user applications aur hardware k beech connection banata hain..
+
+-primary Goals:
+-> convenience: user - friendly interface pradhan karna (Desktop os ka mukhya dhyan).
+->efficiency; hardware resources (cpu, memorty, i/o)ko optimally utilize karna(server os ka mukhya dhyan).
