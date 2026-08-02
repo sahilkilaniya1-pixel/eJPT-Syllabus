@@ -15,3 +15,8 @@
 | **Progress** | Mandatory | Processes not executing in their Critical Section cannot block other requesting processes from entering. Decision-making must not lead to infinite delay. |
 | **Bounded Waiting** | Mandatory | There must be a limit on the number of times other processes can enter their Critical Sections after a process makes a request, preventing starvation. |
 | **Speed Independence** | Supporting | The solution must assume no dependencies or guarantees regarding relative CPU execution speeds. |
+
+Banker's Algorithm Core Formulas:
+• Need[i][j] = Max[i][j] − Allocation[i][j]
+• Allocation is approved ONLY IF Request[i] ≤ Need[i] AND Request[i] ≤ Available
+
