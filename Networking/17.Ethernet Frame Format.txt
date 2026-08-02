@@ -7,3 +7,17 @@ Ethernet at Data Link Layer::
 
 
 ->Ethernet frame start with preamble and SFD, Both works at the Physical layer.
+
+
+Normal code files (Python, JS, C++) ke comments ke liye exact frame layout:
+
+```text
+                  IEEE 802.3 ETHERNET Frame Format
+
+┌────────────┬───────┬─────────────────────┬────────────────┬──────────┬─────────────────┬──────────┐
+│  PREAMBLE  │  SFD  │ DESTINATION ADDRESS │ SOURCE ADDRESS │ LENGTH   │      DATA       │   CRC    │
+├────────────┼───────┼─────────────────────┼────────────────┼──────────┼─────────────────┼──────────┤
+│  7 Bytes   │ 1 Byte│       6 Bytes       │    6 Bytes     │ 2 Bytes  │ 46 - 1500 Bytes │ 4 Bytes  │
+└────────────┴───────┴─────────────────────┴────────────────┴──────────┴─────────────────┴──────────┘
+
+
