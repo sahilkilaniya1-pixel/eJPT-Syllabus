@@ -29,4 +29,5 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
   private state PCB page table file descriptiors
   thares specific stack registers aur program counter pc.
 
-  
+  os kernel architecture 
+  monolithic kernel saare major servies proceess file system memory device drivers ek he address spaces mein kernel mode par run hoti hain
