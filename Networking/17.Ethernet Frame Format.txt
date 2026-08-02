@@ -27,3 +27,4 @@ Ethernet Frame format::
 -> Start of frame delimiter (SFD): Always set to 10101011. SFD indicates that upcoming bits are starting of the frame , which is the destination address.
 -> destination Address: contains the MAC address of machine for which data is destined.
 ->Source Address:contains the MAC address of source machine. As source Address is Always an individual address (Unicast). the least significant bit of first byte is Always 0.
+->Lenght: indicates the Lenght of entire Ethernet frame. this can hold the Length value between 0 to 65534. but Length cannot be larger than 1500 because of some own limitations of Ethernet.
