@@ -8,3 +8,6 @@ OS ek Resource Manager aur interface ki tarah kaam  karta hain jo user applicati
 ->user mode(mode bit=1): unprivilegede instuructions execute hote hain. directly hardware access allowed nhihota.
 
 kernal / privileged mode mode bit=0 cpu sari hardware level aur sensitive instructions exucute kar sakta hai.
+
+type of opeatationg systembatch os- similar jobs ka batch bana kar cpu ko diya jata hain. interactive input nahi hota; CPU idle time high retha hain.
+multiprogramming OS: main memory ram mein ek s adhik processes rethe hain. jab ek process i/o complte hone ka wait krta hain, cpu turant doose process par switch kar jata hain iss e cpu utilixzation significantly incerease hota hain.
