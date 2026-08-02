@@ -12,8 +12,13 @@
 ## Paging Formulas & Address Translations
 
 | Metric / Translation | Formula / Structure |
-| :--- | :--- |
-| **Logical Address** | $\langle \text{Page Number } (p), \text{ Offset } (d) \rangle$ |
-| **Physical Address** | $\langle \text{Frame Number } (f), \text{ Offset } (d) \rangle$ |
-| **Number of Pages** | $\frac{\text{Virtual Address Space}}{\text{Page Size}}$ |
-| **Page Table Size** | $\text{Number of Pages} \times \text{Page Table Entry (PTE) Size}$ |
+Paging Calculations:
+• Logical Address = ⟨ Page Number (p), Offset (d) ⟩
+• Physical Address = ⟨ Frame Number (f), Offset (d) ⟩
+• Page Table Size = Number of Pages × Page Table Entry (PTE) Size
+• Number of Pages = (Virtual Address Space) / (Page Size)
+
+
+Effective Memory Access Time (EAT):
+EAT = h × (c + m) + (1 − h) × (c + 2m)
+Where: h = TLB Hit Ratio, c = TLB Access Time, m = Main Memory Access Time. 
