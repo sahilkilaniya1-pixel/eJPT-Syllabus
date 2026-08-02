@@ -3,3 +3,5 @@
 * **Batch OS:** Similar jobs are grouped into batches and given to the CPU. There is no interactive input, and CPU idle time remains high.
 
 * **Multiprogramming OS:** Multiple processes reside in Main Memory (RAM) simultaneously. When one process waits for I/O completion, the CPU immediately switches to another process, significantly increasing CPU utilization.
+
+* **Multitasking / Time-Sharing OS:** A logical extension of multiprogramming. Fast context switching occurs based on a Time Quantum (CPU Slice) via Round-Robin scheduling, creating the illusion that multiple apps are running concurrently.
