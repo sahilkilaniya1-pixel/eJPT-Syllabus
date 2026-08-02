@@ -28,3 +28,5 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
 
   private state PCB page table file descriptiors
   thares specific stack registers aur program counter pc.
+
+  
