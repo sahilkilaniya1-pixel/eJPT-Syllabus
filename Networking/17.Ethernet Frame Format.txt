@@ -24,3 +24,5 @@ Normal code files (Python, JS, C++) ke comments ke liye exact frame layout:
 
 Ethernet Frame format::
 -> preamble:: this is a pattern of alternative 0's and 1's which indicates starting of the frame and allow sender and receiver to establish bit synchronization.
+-> Start of frame delimiter (SFD): Always set to 10101011. SFD indicates that upcoming bits are starting of the frame , which is the destination address.
+-> destination Address: contains the MAC address of machine for which data is destined.
