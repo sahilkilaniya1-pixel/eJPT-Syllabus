@@ -56,3 +56,6 @@ process control block pcb process creatinng process program in execution primary
  fork system call ek duplicate child process bananti hain parent kochiild ka pid return hota hain jabki child ko 0 return hota hian exec sysytem current process address space ko naye binary code program se replce kar deti hain 
 
  process state lifestyle new process launch hone wala hain ready ram mein cpu allocation ka wait kar raha hain long term schedulet swara maintaion running cpu par instruction eexcute ho rahe hain short term scheduler allocate  karta hain watitng blocked io event ya sgnal ak wait kar raha hain terminated program execution complete ho gaya suspeded states jab ram full ho jati hain tab medim term scheduler process kosecondatu idsk par swap out karke susped ready ya sustedn awit state mein daal det ahian
+ context switching cpu ko ek process se doosre process par switch karen ki process ko context witch kehte hain 1. current running proces ki sate usek pcb mein save hoti hain next  process ki state uske pcb se restore load hoti hain
+ overhed note contect swithing pure os overhed hain iske dauran cpu ko real work execute  nahi karta hardware register cache invalidation aur tlb flushes iski main complexily badhare hain.
+ 
