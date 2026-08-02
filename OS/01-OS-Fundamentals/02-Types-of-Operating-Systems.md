@@ -10,4 +10,6 @@
 
 * **Real-Time OS (RTOS):** Operates under strict timing constraints.
 
-* **Hard RTOS:** Missing a deadline is considered a total system failure (e.g., Missile Defense, Airbag System).
+* **Hard RTOS:** Missing a deadline is considered a total system failure (e.g., Missile Defense, Airbag System)..
+
+* **Soft RTOS:** Minor delays can be tolerated (e.g., Video Streaming, Gaming).
