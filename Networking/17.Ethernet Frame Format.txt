@@ -4,3 +4,6 @@ Ethernet at Data Link Layer::
 
     ->Logical Link Control(LLC): Sublayer and the
     ->Media Access Control(MAC):Sublayer.
+
+
+->Ethernet frame start with preamble and SFD, Both works at the Physical layer.
