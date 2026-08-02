@@ -9,3 +9,5 @@
 * **Multiprocessing OS:** Multiple CPUs (Cores) within a single system share the same memory (Parallel execution).
 
 * **Real-Time OS (RTOS):** Operates under strict timing constraints.
+
+* **Hard RTOS:** Missing a deadline is considered a total system failure (e.g., Missile Defense, Airbag System).
