@@ -16,3 +16,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
  multiprocessing os: single systm mein multiple cpus cores ek he momory share karte hain parallel execution
   real time os rtos strict timing consttraints hote hain. 
   hard rtos deadline miss hona system failure maana jaata hai e.g missile defense, airbag system.
+
+
+  soft rtos minor delays tolerate iye ja skte hain e.g video streaming, gaming.
