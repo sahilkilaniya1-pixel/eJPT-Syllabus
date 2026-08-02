@@ -25,4 +25,6 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
   resource sharing har process ki apni isolated memory sapce hoti hain and cthreas same code data aur heap space share karte hain.
 
   context switching slower & heavyweight pcb save restore overhead and fast lightwate therasd control block overhread low hota hain.
-  
+
+  private state PCB page table file descriptiors
+  thares specific stack registers aur program counter pc.
