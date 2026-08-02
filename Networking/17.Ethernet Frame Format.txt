@@ -2,4 +2,5 @@ Ethernet at Data Link Layer::
 ->Ethernet specifies what the data should look like, including the header and trailer.
 ->The protocol is defined by IEEE 802.3 and divides the data link layer into two sublayers:
 
-    ->Logical Link 
+    ->Logical Link Control(LLC): Sublayer and the
+    
