@@ -29,4 +29,4 @@ Ethernet Frame format::
 ->Source Address:contains the MAC address of source machine. As source Address is Always an individual address (Unicast). the least significant bit of first byte is Always 0.
 ->Lenght: indicates the Lenght of entire Ethernet frame. this can hold the Length value between 0 to 65534. but Length cannot be larger than 1500 because of some own limitations of Ethernet.
 ->Data: This is the place where actual data is inserted , also known as Payload.The maximum data present may be as long as 1500 Bytes.
-->
+->Cyclic redundancy Check (CRC): this field contains a 32-bits hash code of data, which is generated over the destination Address, source Address, Length, and Data fiekd.
