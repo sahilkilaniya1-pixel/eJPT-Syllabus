@@ -14,4 +14,5 @@ multiprogramming OS: main memory ram mein ek s adhik processes rethe hain. jab e
 multitasking time sharing os: multiprogramming ka logical extension. time quantum (cpu slice) ke basis par round-robin scheduling dwara fast context switching hoti hain. jisse lagta hai ki multiple apps ek saath chal rahe hain.
  
  multiprocessing os: single systm mein multiple cpus cores ek he momory share karte hain parallel execution
- 
+  real time os rtos strict timing consttraints hote hain. 
+  hard rtos deadline miss hona system failure maana jaata hai e.g missile defense, airbag system.
