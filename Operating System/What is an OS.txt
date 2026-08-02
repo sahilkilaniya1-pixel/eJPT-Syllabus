@@ -46,4 +46,4 @@ multitasking time sharing os: multiprogramming ka logical extension. time quantu
   device management read, write ioclt
   information comm getpid, pipe, shmget socket,
 
-  
+  booting process & 32 bit vs 64 bit systembooting steps post power on self test rom se bios uefi exceute hote hian aur basic hardware test karta hain b
